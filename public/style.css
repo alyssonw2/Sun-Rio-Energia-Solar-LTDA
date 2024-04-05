@@ -1,0 +1,9 @@
+.cardBeneficios{
+    min-height: 250px;
+    background-color: #263E4F; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
