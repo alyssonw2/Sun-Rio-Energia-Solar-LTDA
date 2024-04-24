@@ -4,10 +4,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home</title>
+  <title>SUNRIO </title>
   <link rel="stylesheet" href="./bootstrap.min.css" />
+  <meta name="description" content="Lider em energia solar e aquecimento ">
+  <meta property="og:title" content="SUNRIO" />
+
+  <meta property="og:url" content="./" />
+  <meta property="og:image" content="./img/sistemaFotovoltaico.png" />
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -15,7 +23,7 @@
     <div class="container">
       <div class="row ">
         <div class="col-lg-2 col-sm-12 d-flex ">
-          <img src="./img/logo.png" alt="" width="150px">
+          <img loading="lazy" src="./img/logo.png" alt="" width="150px">
         </div>
         <div
           class="menu d-none d-sm-flex  col-lg-4 d-md-flex col-lg-3 d-flex justify-content-center  align-items-center gap-2">
@@ -40,7 +48,7 @@
               display: flex;
               justify-content: space-between;
             ">
-              <img src="./img/whtsappmenu.png" alt="">
+              <img loading="lazy" src="./img/whtsappmenu.png" alt="">
               (21) 3936-0411
             </button>
           </div>
@@ -51,101 +59,316 @@
     </div>
   </div>
 
-  <div style="
-        background-image: url(./img/image.png);
-        background-size: cover;
-        width: 100%;
-        height: 500px;
-      ">
-    <div style="
-          background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(63,141,179,1) 65%);
-          width: 100%;
-          height: 100%;
-        ">
-      <div class="container" style="padding: 50px">
-        <div style="
-              display: flex;
-              text-align: center;
-              color: white;
-              font-size: 1.3rem;
-              padding-top: 20px;
-            ">
-          <span><b>Os sistemas solares já se provaram
-              tendência para quem quer economizar muito
-              sem perder a qualidade, tudo isso enquanto
-              contribui com o planeta. Prático, eficiente,
-              acessível: o futuro é para todos.</b></span>
-        </div>
-        <div style="
-              display: flex;
-              text-align: center;
-              justify-content: center;
-              margin-top: 20px;
-              color: white;
-              font-weight: 300;
-            ">
-          <span>Peça um orçamento e reduza os gastos com
-            energia na sua casa ou empresa.
-          </span>
-        </div>
-        <div style="
-              display: flex;
-              text-align: center;
-              justify-content: center;
-              margin-top: 10px;
-            ">
-          <button type="button" class="btn btn-warning" style="
-                width: 200px;
-                height: 50px;
-                border-radius: 35px;
-                color: white;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: #ffc500;
+
+  <div id="carouselTopo" data-bs-interval="5000" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselTopo" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselTopo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselTopo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div id="imagefundo" style="
+                
+                background-size: cover;
+                width: 100%;
+                height: 100%;
               ">
-            Solicite uma cotação
-          </button>
+          <div style="
+                  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(63,141,179,1) 65%);
+                  width: 100%;
+                  height: 100%;
+                ">
+            <div class="container" style="padding: 50px">
+              <div style="
+                      display: flex;
+                      text-align: center;
+                      color: white;
+                      font-size: 1.3rem;
+                      padding-top: 20px;
+                    ">
+                <span><b>Os sistemas solares já se provaram
+                    tendência para quem quer economizar muito
+                    sem perder a qualidade, tudo isso enquanto
+                    contribui com o planeta. Prático, eficiente,
+                    acessível: o futuro é para todos.</b></span>
+              </div>
+              <div style="
+                      display: flex;
+                      text-align: center;
+                      justify-content: center;
+                      margin-top: 20px;
+                      color: white;
+                      font-weight: 300;
+                    ">
+                <span>Peça um orçamento e reduza os gastos com
+                  energia na sua casa ou empresa.
+                </span>
+              </div>
+              <div style="
+                      display: flex;
+                      text-align: center;
+                      justify-content: center;
+                      margin-top: 10px;
+                    ">
+                <button type="button" class="btn btn-warning" style="
+                        width: 200px;
+                        height: 50px;
+                        border-radius: 35px;
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #ffc500;
+                      ">
+                  Solicite uma cotação
+                </button>
+              </div>
+              <div style="
+                      display: flex;
+                      text-align: center;
+                      justify-content: center;
+                      margin-top: 10px;
+                      color: white;
+                    ">
+                <span>Ou entre em contato pelo whatsapp:</span>
+              </div>
+              <div style="
+                      display: flex;
+                      text-align: center;
+                      justify-content: center;
+                      margin-top: 10px;
+                      color: #ffc500;
+                    ">
+                <a style="color: #ffc500; text-decoration: none; font-size: 1.2rem;"
+                  href="http://"><span><b>(21)3936-0411</b></span></a>
+              </div>
+              <div style="
+                      display: flex;
+                      text-align: center;
+                      justify-content: center;
+                      margin-top: 10px;
+                      color: white;
+                    ">
+
+              </div>
+              <div style="
+                      display: flex;
+                      text-align: center;
+                      justify-content: center;
+                      margin-top: 10px;
+                      color: white;
+                    ">
+
+              </div>
+            </div>
+          </div>
         </div>
-        <div style="
-              display: flex;
-              text-align: center;
-              justify-content: center;
-              margin-top: 10px;
-              color: white;
-            ">
-          <span>Ou entre em contato pelo whatsapp:</span>
+      </div>
+      <div class="carousel-item">
+        <div id="imagefundo2" style="
+                        background-position: bottom;
+                        background-size: cover;
+                        width: 100%;
+                        height: 100%;
+                      ">
+          <div style="
+                          background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(63,141,179,1) 65%);
+                          width: 100%;
+                          height: 100%;
+                        ">
+            <div class="container" style="padding: 50px">
+              <div style="
+                              display: flex;
+                              text-align: center;
+                              color: white;
+                              font-size: 1.3rem;
+                              padding-top: 20px;
+                            ">
+                <span><b>Os sistemas de aquecimento solares já se provaram
+                    tendência para quem quer economizar muito
+                    sem perder a qualidade</b></span>
+              </div>
+              <div style="
+                              display: flex;
+                              text-align: center;
+                              justify-content: center;
+                              margin-top: 20px;
+                              color: white;
+                              font-weight: 300;
+                            ">
+                <span>Peça um orçamento e reduza os gastos com
+                  energia na sua casa ou empresa.
+                </span>
+              </div>
+              <div style="
+                              display: flex;
+                              text-align: center;
+                              justify-content: center;
+                              margin-top: 10px;
+                            ">
+                <button type="button" class="btn btn-warning" style="
+                                width: 200px;
+                                height: 50px;
+                                border-radius: 35px;
+                                color: white;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: #ffc500;
+                              ">
+                  Solicite uma cotação
+                </button>
+              </div>
+              <div style="
+                              display: flex;
+                              text-align: center;
+                              justify-content: center;
+                              margin-top: 10px;
+                              color: white;
+                            ">
+                <span>Ou entre em contato pelo whatsapp:</span>
+              </div>
+              <div style="
+                              display: flex;
+                              text-align: center;
+                              justify-content: center;
+                              margin-top: 10px;
+                              color: #ffc500;
+                            ">
+                <a style="color: #ffc500; text-decoration: none; font-size: 1.2rem;"
+                  href="http://"><span><b>(21)3936-0411</b></span></a>
+              </div>
+              <div style="
+                              display: flex;
+                              text-align: center;
+                              justify-content: center;
+                              margin-top: 10px;
+                              color: white;
+                            ">
+
+              </div>
+              <div style="
+                              display: flex;
+                              text-align: center;
+                              justify-content: center;
+                              margin-top: 10px;
+                              color: white;
+                            ">
+
+              </div>
+            </div>
+          </div>
         </div>
-        <div style="
-              display: flex;
-              text-align: center;
-              justify-content: center;
-              margin-top: 10px;
-              color: #ffc500;
-            ">
-          <a style="color: #ffc500; text-decoration: none; font-size: 1.2rem;"
-            href="http://"><span><b>(21)3936-0411</b></span></a>
-        </div>
-        <div style="
-              display: flex;
-              text-align: center;
-              justify-content: center;
-              margin-top: 10px;
-              color: white;
-            ">
-          <span>Receba uma cotação sem compromisso.</span>
-        </div>
-        <div style="
-              display: flex;
-              text-align: center;
-              justify-content: center;
-              margin-top: 10px;
-              color: white;
-            ">
-          <span>Responderemos rapidamente.</span>
+      </div>
+      <div class="carousel-item">
+        <div id="imagefundo3" style="
+                        background-position: bottom;
+                        background-size: cover;
+                        width: 100%;
+                        height: 100%;
+                      ">
+          <div style="
+                          background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(63,141,179,1) 65%);
+                          width: 100%;
+                          height: 100%;
+                        ">
+            <div class="container" style="padding: 50px">
+              <div style="
+                              display: flex;
+                              text-align: center;
+                              color: white;
+                              font-size: 1.3rem;
+                              padding-top: 20px;
+                            ">
+                <span><b>Os sistemas solares já se provaram
+                    tendência para quem quer economizar muito
+                    sem perder a qualidade, tudo isso enquanto
+                    contribui com o planeta. Prático, eficiente,
+                    acessível: o futuro é para todos.</b></span>
+              </div>
+              <div style="
+                              display: flex;
+                              text-align: center;
+                              justify-content: center;
+                              margin-top: 20px;
+                              color: white;
+                              font-weight: 300;
+                            ">
+                <span>Peça um orçamento e reduza os gastos com
+                  energia na sua casa ou empresa.
+                </span>
+              </div>
+              <div style="
+                              display: flex;
+                              text-align: center;
+                              justify-content: center;
+                              margin-top: 10px;
+                            ">
+                <button type="button" class="btn btn-warning" style="
+                                width: 200px;
+                                height: 50px;
+                                border-radius: 35px;
+                                color: white;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: #ffc500;
+                              ">
+                  Solicite uma cotação
+                </button>
+              </div>
+              <div style="
+                              display: flex;
+                              text-align: center;
+                              justify-content: center;
+                              margin-top: 10px;
+                              color: white;
+                            ">
+                <span>Ou entre em contato pelo whatsapp:</span>
+              </div>
+              <div style="
+                              display: flex;
+                              text-align: center;
+                              justify-content: center;
+                              margin-top: 10px;
+                              color: #ffc500;
+                            ">
+                <a style="color: #ffc500; text-decoration: none; font-size: 1.2rem;"
+                  href="http://"><span><b>(21)3936-0411</b></span></a>
+              </div>
+              <div style="
+                              display: flex;
+                              text-align: center;
+                              justify-content: center;
+                              margin-top: 10px;
+                              color: white;
+                            ">
+
+              </div>
+              <div style="
+                              display: flex;
+                              text-align: center;
+                              justify-content: center;
+                              margin-top: 10px;
+                              color: white;
+                            ">
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTopo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselTopo" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
   <div style="background-color: #263e4f">
@@ -171,13 +394,13 @@
       </div>
       <div class="row mt-5">
         <div class="col-md-6 col-sm-12 col-lg-2 mt-3">
-          <img src="./img/cliente1.png" alt="">
+          <img loading="lazy" width="100%" src="./img/cliente1.png" alt="">
         </div>
         <div class="col-md-6 col-sm-12 col-lg-2 mt-3">
-          <img src="./img/cliente2.png" alt="">
+          <img loading="lazy" width="100%" src="./img/cliente2.png" alt="">
         </div>
         <div class="col-md-6 col-sm-12 col-lg-2 mt-3">
-          <img src="./img/cliente3.png" alt="">
+          <img loading="lazy" width="100%" src="./img/cliente3.png" alt="">
         </div>
         <div class="col-md-6 col-sm-12 col-lg-2 mt-3">
           <div class="card card-body" style="
@@ -207,7 +430,7 @@
   <div class="container mt-5">
     <div class="row">
       <div class="col-md-6">
-        <img style="width: 100%;max-width: 450px;" src="./img/image24.png" alt="">
+        <img loading="lazy" style="width: 100%;max-width: 450px;" src="./img/image24.png" alt="">
       </div>
       <div class="col-md-6 mt-3">
         <div>
@@ -248,14 +471,11 @@
       </div>
     </div>
   </div>
-  <div class="mt-5 p-5" style="
-        display: flex;
-
-        align-items: center;
-        justify-content: center;
-        background-color: #F4F4F4;
+  <div class="mt-5  d-flex justify-content-center align-items-center " style="
+        
+        background-color: #ffffff;
       ">
-    <div class="">
+    <div class="container">
       <div class="" style="
                 
                 width: 100%;
@@ -264,60 +484,129 @@
 
 
 
-        <div class="row">
+        <div class="d-flex flex-column-reverse  justify-content-between flex-sm-column-reverse flex-md-row gap-4">
 
-          <div class="col-sm-12 mt-4 col-md-6">
-            <div class="col-12 d-flex justify-content-center align-items-center mb-5">
-              <img src="./img/image 18.png" alt="" style="width: 150px; height: 150px;">
-            </div>
-            <h2 style="text-align: center;">ECONOMIA ANUAL ESTIMADA</h2>
-            <h1 style="text-align: center;">R$ <economia>720</economia>
-            </h1>
+          <div class="col-sm-12 mt-4 col-md-6 ">
+            <div id="EnergiaPainel">
+              <div class="col-12 d-flex justify-content-center align-items-center mb-5">
+                <img loading="lazy" src="./img/image 18.png" alt="" style="width: 150px; height: 150px;">
+              </div>
+              <h2 style="text-align: center;">ECONOMIA ANUAL ESTIMADA</h2>
+              <h1 style="text-align: center;">R$ <economia>720</economia>
+              </h1>
 
-            <div class="row">
+              <div class="row">
 
 
-              <div class="col-6 mt-2">
+                <div class="col-6 mt-2">
 
-                <div class="card card-body">
-                  <div>QUANTIDADE</div>
-                  <div> <b>
-                      <quantidade>2</quantidade>
-                    </b></div>
+                  <div class="card card-body">
+                    <div>QUANTIDADE</div>
+                    <div> <b>
+                        <quantidade>2</quantidade>
+                      </b></div>
+                  </div>
+
                 </div>
 
-              </div>
+                <div class="col-6 mt-2">
+                  <div class="card card-body">
+                    <div>POTÊNCIA</div>
+                    <div>
+                      <b>
+                        <potencia> 290</potencia> KVP
+                      </b>
+                    </div>
+                  </div>
 
-              <div class="col-6 mt-2">
-                <div class="card card-body">
-                  <div>POTÊNCIA</div>
-                  <div>
-                    <b>
-                      <potencia> 290</potencia> KVP
-                    </b>
+                </div>
+                <div class="col-6 mt-2">
+                  <div class="card card-body">
+                    <div>ÁREA</div>
+                    <div>
+                      <b>
+                        <areatotal> 8 </areatotal> M
+                      </b>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-6 mt-2">
+                  <div class="card card-body">
+                    <div>PAYBACK</div>
+                    <div> <b>
+                        <paiback>36</paiback> MESES
+                      </b></div>
                   </div>
                 </div>
 
               </div>
-              <div class="col-6 mt-2">
 
-                <div class="card card-body">
-                  <div>ÁREA</div>
-                  <div> <b> <area> 8 </area> M</b></div>
-                </div>
-
+            </div>
+            <div hidden id="AquecimentoPainel">
+              <div class="col-12 d-flex justify-content-center align-items-center mb-5">
+                <img loading="lazy" src="./img/33487.jpg" alt="" style="width: 150px; height: 150px;">
               </div>
-              <div class="col-6 mt-2">
-                <div class="card card-body">
-                  <div>PAYBACK</div>
-                  <div> <b>
-                      <paiback>36</paiback> MESES
-                    </b></div>
+              <h2 style="text-align: center;">ECONOMIA ANUAL ESTIMADA</h2>
+              <h1 style="text-align: center;">R$ <economiaaquecimento>0</economiaaquecimento>
+              </h1>
+
+              <div class="row">
+
+
+                <div class="col-6 mt-2">
+
+                  <div class="card card-body">
+                    <div>PESSOAS</div>
+                    <div> <b>
+                        <quantidadepessoas>0</quantidadepessoas>
+                      </b></div>
+                  </div>
+
                 </div>
+
+                <div class="col-6 mt-2">
+                  <div class="card card-body">
+                    <div>CONSUMO M³</div>
+                    <div>
+                      <b>
+                        <consumometrocubico> 0</consumometrocubico> M³
+                      </b>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-12 mt-2" hidden>
+                  <div class="card card-body">
+                    <div>PAYBACK</div>
+                    <div> <b>
+                        <paybackaquecimento>0</paybackaquecimento> MESES
+                      </b></div>
+                  </div>
+                </div>
+
+                <small style="
+    font-size: 0.8rem;
+    color: #3338;
+    padding: 1rem;
+">
+                  Para calcular o custo médio de aquecer 1m³ de água de 25ºC para 45ºC, usamos a fórmula da quantidade
+                  de energia
+                  necessária. Primeiro, determinamos o aumento de temperatura desejado (20ºC). Em seguida, multiplicamos
+                  esse aumento pela
+                  capacidade térmica da água (cerca de 4.186 joules por grama por grau Celsius) e pela massa de água
+                  (1000 kg para 1m³).
+                  Isso nos dá a quantidade total de energia necessária em joules. Para converter essa energia em
+                  quilowatt-hora (kWh),
+                  dividimos pela quantidade de joules em um kWh (cerca de 3.600.000). Finalmente, multiplicamos o
+                  resultado pelo custo por
+                  kWh (R$1) para obter o custo médio de aquecer 1m³ de água.
+                </small>
+
               </div>
 
             </div>
-
 
           </div>
           <div class="col-sm-12  mt-4 col-md-6 d-flex flex-row-reverse ">
@@ -325,11 +614,17 @@
               <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                    type="button" role="tab" aria-controls="home" aria-selected="true">Energia</button>
+                    type="button" onclick="
+                    document.querySelector('#AquecimentoPainel').hidden=true;
+                    document.querySelector('#EnergiaPainel').hidden=false;
+                    " role="tab" aria-controls="home" aria-selected="true">Energia</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
-                    role="tab" aria-controls="profile" aria-selected="false">Aquecimento</button>
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#Aquecimento"
+                    type="button" role="tab" aria-controls="Aquecimento" aria-selected="false" onclick="
+                    document.querySelector('#AquecimentoPainel').hidden=false;
+                    document.querySelector('#EnergiaPainel').hidden=true;
+                    ">Aquecimento</button>
                 </li>
 
               </ul>
@@ -370,35 +665,228 @@
                       <input type="range" oninput="document.querySelector('.ws').innerText = this.value;
                       document.querySelector('economia').innerText = ((this.value*0.3)*12).toFixed(2);
                       document.querySelector('potencia').innerText = (this.value/7).toFixed(0)*10;
-                      document.querySelector('area').innerText = (this.value/25).toFixed(0);
+                      document.querySelector('areatotal').innerText = (this.value/25).toFixed(0);
                       document.querySelector('quantidade').innerText = (this.value/100).toFixed(0);
                       document.querySelector('paiback').innerText = (this.value <= 2000 ? '36':'48')" step="50"
                         max="10000" value="200" class="form-range" id="customRange1">
                     </div>
                   </div>
 
-                </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                  <div class="container d-flex justify-content-center align-items-center mt-4">
 
 
-                <div class="container d-flex justify-content-center align-items-center mt-4">
-                  <button
-                    onclick="window.location.href='https://api.whatsapp.com/send/?phone=553198872489&text=Estou vindo pelo site, minha conta atual é de aproximadamente R$'+ document.querySelector('.ws').innerText "
-                    type="button" class="btn btn-warning" style="
-                                  width: 100%;
-                                  max-width: 350px;
-                                  height: 50px;
-                                  border-radius: 35px;
-                                  color: white;
-                                  display: flex;
-                                  justify-content: center;
-                                  align-items: center;
-                                  background-color: #ffc500;
-                                  text-transform: uppercase;
-                                ">
-                    Solicitar Orçamento
-                  </button>
+                    <button
+                      onclick="window.location.href='https://api.whatsapp.com/send/?phone=553198872489&text=Estou vindo pelo site, minha conta atual é de aproximadamente R$'+ document.querySelector('.ws').innerText "
+                      type="button" class="btn btn-warning" style="
+                                                    width: 100%;
+                                                    max-width: 350px;
+                                                    height: 50px;
+                                                    border-radius: 35px;
+                                                    color: white;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    background-color: #ffc500;
+                                                    text-transform: uppercase;
+                                                  ">
+                      Solicitar Orçamento
+                    </button>
+                  </div>
+
                 </div>
+
+                <div class="tab-pane fade" id="Aquecimento" role="tabpanel" aria-labelledby="profile-tab">
+
+                  <div class="container">
+                    <div class="">
+                      <h1>Informações para cotação</h1>
+                      <p>Com base nas informações a baixo vamos calcular um sistema ideial para você</p>
+                    </div>
+
+
+                    <div class="row">
+                      <div class=" col d-flex justify-content-center align-items-center flex-column">
+                        <span class="mb-2">Casa</span>
+                        <img loading="lazy" onclick="document.querySelector('#tipolocal').value=1;showNivel(1)"
+                          width="80px" class="actived nivel1 niveis  btn p-2"
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Im0xNiA4LjQxbC00LjUtNC41TDQuNDEgMTFINnY4aDN2LTZoNXY2aDN2LThoMS41OUwxNyA5LjQxVjZoLTF6TTIgMTJsOS41LTkuNUwxNSA2VjVoM3Y0bDMgM2gtM3Y4aC01di02aC0zdjZINXYtOHoiLz48L3N2Zz4="
+                          alt="">
+                      </div>
+                      <div class="col d-flex justify-content-center align-items-center flex-column">
+                        <span class="mb-2">Apartamento</span>
+                        <img loading="lazy" onclick="document.querySelector('#tipolocal').value=2;showNivel(2)"
+                          width="80px" class="nivel2  niveis btn p-2"
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0Ij48cGF0aCBmaWxsPSIjODg4ODg4IiBkPSJNMTkyIDEyOHY3MDRoMzg0VjEyOHptLTMyLTY0aDQ0OGEzMiAzMiAwIDAgMSAzMiAzMnY3NjhhMzIgMzIgMCAwIDEtMzIgMzJIMTYwYTMyIDMyIDAgMCAxLTMyLTMyVjk2YTMyIDMyIDAgMCAxIDMyLTMyIi8+PHBhdGggZmlsbD0iIzg4ODg4OCIgZD0iTTI1NiAyNTZoMjU2djY0SDI1NnptMCAxOTJoMjU2djY0SDI1NnptMCAxOTJoMjU2djY0SDI1NnptMzg0LTEyOGgxMjh2NjRINjQwem0wIDEyOGgxMjh2NjRINjQwek02NCA4MzJoODk2djY0SDY0eiIvPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik02NDAgMzg0djQ0OGgxOTJWMzg0em0tMzItNjRoMjU2YTMyIDMyIDAgMCAxIDMyIDMydjUxMmEzMiAzMiAwIDAgMS0zMiAzMkg2MDhhMzIgMzIgMCAwIDEtMzItMzJWMzUyYTMyIDMyIDAgMCAxIDMyLTMyIi8+PC9zdmc+"
+                          alt="">
+                      </div>
+                      <div class="col d-flex justify-content-center align-items-center flex-column">
+                        <span class="mb-2">Industria</span>
+                        <img loading="lazy" onclick="document.querySelector('#tipolocal').value=3;showNivel(3)"
+                          width="80px" class="nivel3 niveis  btn p-2"
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM4ODg4ODgiIGQ9Ik0zIDRoMXY5aDNWN2g1djRoNHY0aDR2Nkgzem0xMyAxMnY0aDN2LTR6bS00LTR2OGgzdi04ek04IDh2MTJoM1Y4em0tNCA2djZoM3YtNnoiLz48L3N2Zz4="
+                          alt="">
+                      </div>
+
+                      <div class="col-12">
+                        <div class="container">
+                          <input id="tipolocal" type="range" oninput="
+                                                  showNivel(this.value)
+                                                  
+                                                  " step="1" min="1" max="3" value="1" class="form-range">
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="card card-body">
+                      <div class="mt-2">
+                        <div class="row">
+                          <div class="col d-flex  align-items-center">
+                            <h1 class="showpessoas">0</h1><span class="d-none d-md-flex">pessoas</span>
+                          </div>
+                          <div class="col-8">
+                            <label for="torneiras">
+                              <img
+                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxLjI1ZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgNjQwIDUxMiI+PHBhdGggZmlsbD0iIzg4ODg4OCIgZD0iTTk2IDIyNGMzNS4zIDAgNjQtMjguNyA2NC02NHMtMjguNy02NC02NC02NHMtNjQgMjguNy02NCA2NHMyOC43IDY0IDY0IDY0bTQ0OCAwYzM1LjMgMCA2NC0yOC43IDY0LTY0cy0yOC43LTY0LTY0LTY0cy02NCAyOC43LTY0IDY0czI4LjcgNjQgNjQgNjRtMzIgMzJoLTY0Yy0xNy42IDAtMzMuNSA3LjEtNDUuMSAxOC42YzQwLjMgMjIuMSA2OC45IDYyIDc1LjEgMTA5LjRoNjZjMTcuNyAwIDMyLTE0LjMgMzItMzJ2LTMyYzAtMzUuMy0yOC43LTY0LTY0LTY0bS0yNTYgMGM2MS45IDAgMTEyLTUwLjEgMTEyLTExMlMzODEuOSAzMiAzMjAgMzJTMjA4IDgyLjEgMjA4IDE0NHM1MC4xIDExMiAxMTIgMTEybTc2LjggMzJoLTguM2MtMjAuOCAxMC00My45IDE2LTY4LjUgMTZzLTQ3LjYtNi02OC41LTE2aC04LjNDMTc5LjYgMjg4IDEyOCAzMzkuNiAxMjggNDAzLjJWNDMyYzAgMjYuNSAyMS41IDQ4IDQ4IDQ4aDI4OGMyNi41IDAgNDgtMjEuNSA0OC00OHYtMjguOGMwLTYzLjYtNTEuNi0xMTUuMi0xMTUuMi0xMTUuMm0tMjIzLjctMTMuNEMxNjEuNSAyNjMuMSAxNDUuNiAyNTYgMTI4IDI1Nkg2NGMtMzUuMyAwLTY0IDI4LjctNjQgNjR2MzJjMCAxNy43IDE0LjMgMzIgMzIgMzJoNjUuOWM2LjMtNDcuNCAzNC45LTg3LjMgNzUuMi0xMDkuNCIvPjwvc3ZnPg=="
+                                alt="" width="20px">
+
+                              QUANTAS PESSOAS MORAM NA RESIDÊNCIA?</label>
+                            <input type="range" oninput="
+                            document.querySelector('.showpessoas').innerText=this.value;
+                            document.querySelector('quantidadepessoas').innerText = this.value;
+                            document.querySelector('consumometrocubico').innerText = (((parseInt(document.querySelector('quantidadepessoas').innerText)*this.value)*0.0002 + parseInt(document.querySelector('#TorneirasQuentes').value)*0.005) *30).toFixed(2)
+                            document.querySelector('economiaaquecimento').innerText = ((((parseInt(document.querySelector('quantidadepessoas').innerText)*this.value)*0.0002 + parseInt(document.querySelector('#TorneirasQuentes').value)*0.005) *30 + parseInt(document.querySelector('#totalpissinas').value)) .toFixed(2)*(55*12)).toFixed(2)
+                            
+                            " ; step="1" max="20" value="0" class="form-range">
+                          </div>
+                        </div>
+
+                      </div>
+
+
+
+                      <div class="mt-2">
+                        <div class="row">
+                          <div class="col d-flex  align-items-center">
+                            <h1 class="showduchas">0</h1> <span class="d-none d-md-flex">unidades</span>
+                          </div>
+                          <div class="col-8">
+                            <label for="torneiras">
+                              <img
+                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iIzg4ODg4OCIgZD0iTTMwNCAzMjBhMTYgMTYgMCAxIDAgMTYgMTZhMTYgMTYgMCAwIDAtMTYtMTZtMzItOTZhMTYgMTYgMCAxIDAgMTYgMTZhMTYgMTYgMCAwIDAtMTYtMTZtMzIgNjRhMTYgMTYgMCAxIDAtMTYtMTZhMTYgMTYgMCAwIDAgMTYgMTZtLTMyIDMyYTE2IDE2IDAgMSAwLTE2LTE2YTE2IDE2IDAgMCAwIDE2IDE2bS0zMi02NGExNiAxNiAwIDEgMCAxNiAxNmExNiAxNiAwIDAgMC0xNi0xNm0xMjgtMzJhMTYgMTYgMCAxIDAtMTYtMTZhMTYgMTYgMCAwIDAgMTYgMTZtLTQ4IDE2YTE2IDE2IDAgMSAwIDE2LTE2YTE2IDE2IDAgMCAwLTE2IDE2bS0xNi00OGExNiAxNiAwIDEgMCAxNiAxNmExNiAxNiAwIDAgMC0xNi0xNm05NiAzMmExNiAxNiAwIDEgMCAxNiAxNmExNiAxNiAwIDAgMC0xNi0xNm0zMi0zMmExNiAxNiAwIDEgMCAxNiAxNmExNiAxNiAwIDAgMC0xNi0xNm0tNjQgNjRhMTYgMTYgMCAxIDAgMTYgMTZhMTYgMTYgMCAwIDAtMTYtMTZtLTMyIDMyYTE2IDE2IDAgMSAwIDE2IDE2YTE2IDE2IDAgMCAwLTE2LTE2bS02NCA2NGExNiAxNiAwIDEgMCAxNiAxNmExNiAxNiAwIDAgMC0xNi0xNm0tMzIgMzJhMTYgMTYgMCAxIDAgMTYgMTZhMTYgMTYgMCAwIDAtMTYtMTZtNjQtNjRhMTYgMTYgMCAxIDAgMTYgMTZhMTYgMTYgMCAwIDAtMTYtMTZtMjEuNjUtMjE4LjM1bC0xMS4zLTExLjMxYTE2IDE2IDAgMCAwLTIyLjYzIDBMMzUwLjA1IDk2QTExMS4xOSAxMTEuMTkgMCAwIDAgMjcyIDY0Yy0xOS4yNCAwLTM3LjA4IDUuMy01Mi45IDEzLjg1bC0xMC0xMEExMjEuNzIgMTIxLjcyIDAgMCAwIDEyMy40NCAzMkM1NS40OSAzMS41IDAgOTIuOTEgMCAxNjAuODVWNDY0YTE2IDE2IDAgMCAwIDE2IDE2aDMyYTE2IDE2IDAgMCAwIDE2LTE2VjE1OC40YzAtMzAuMTUgMjEtNTguMiA1MS02MS45M2E1OC4zOCA1OC4zOCAwIDAgMSA0OC45MyAxNi42N2wxMCAxMEMxNjUuMyAxMzguOTIgMTYwIDE1Ni43NiAxNjAgMTc2YTExMS4yMyAxMTEuMjMgMCAwIDAgMzIgNzguMDVsLTUuNjYgNS42N2ExNiAxNiAwIDAgMCAwIDIyLjYybDExLjMgMTEuMzFhMTYgMTYgMCAwIDAgMjIuNjMgMGwxNjkuMzgtMTY5LjM3YTE2IDE2IDAgMCAwIDAtMjIuNjMiLz48L3N2Zz4="
+                                alt="" width="20px">
+
+                              QUANTAS DUCHAS TERÃO ÁGUA QUENTE?</label>
+                            <input oninput="
+                            document.querySelector('.showduchas').innerText = this.value;
+                            document.querySelector('consumometrocubico').innerText = (((parseInt(document.querySelector('quantidadepessoas').innerText)*this.value)*0.0002 + parseInt(document.querySelector('#TorneirasQuentes').value)*0.005) *30 + parseInt(document.querySelector('#totalpissinas').value)) .toFixed(2)
+                            document.querySelector('economiaaquecimento').innerText = ((((parseInt(document.querySelector('quantidadepessoas').innerText)*this.value)*0.0002 + parseInt(document.querySelector('#TorneirasQuentes').value)*0.005) *30 + parseInt(document.querySelector('#totalpissinas').value)) .toFixed(2)*(55*12)).toFixed(2)
+                            " type="range" step="1" max="50" value="0" class="form-range">
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="mt-2">
+                        <div class="row">
+                          <div class="col d-flex  align-items-center">
+
+                            <h1 class="showtorneiras">0</h1> <span class="d-none d-md-flex">unidades</span>
+                          </div>
+                          <div class="col-8">
+                            <label for="torneiras">
+
+                              <img
+                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iIzg4ODg4OCIgZD0iTTM1MiAyNTZoLTM4LjYxYy0xNS43MS0xMy40NC0zNS40Ni0yMy4wNy01Ny4zOS0yOHYtNDcuNTZsLTMyLTMuMzhsLTMyIDMuMzhWMjI4Yy0yMS45MyA1LTQxLjY4IDE0LjYtNTcuMzkgMjhIMTZhMTYgMTYgMCAwIDAtMTYgMTZ2OTZhMTYgMTYgMCAwIDAgMTYgMTZoOTIuNzlDMTI5LjM4IDQyMS43MyAxNzMgNDQ4IDIyNCA0NDhzOTQuNjItMjYuMjcgMTE1LjIxLTY0SDM1MmEzMiAzMiAwIDAgMSAzMiAzMmEzMiAzMiAwIDAgMCAzMiAzMmg2NGEzMiAzMiAwIDAgMCAzMi0zMmExNjAgMTYwIDAgMCAwLTE2MC0xNjBNODEuNTkgMTU5LjkxbDE0Mi40MS0xNWwxNDIuNDEgMTVjOS40MiAxIDE3LjU5LTYuODEgMTcuNTktMTYuOHYtMzAuMjJjMC0xMC04LjE3LTE3LjgtMTcuNTktMTYuODFMMjU2IDEwNy43NFY4MGExNiAxNiAwIDAgMC0xNi0xNmgtMzJhMTYgMTYgMCAwIDAtMTYgMTZ2MjcuNzRMODEuNTkgOTYuMDhDNzIuMTcgOTUuMDkgNjQgMTAyLjkgNjQgMTEyLjg5djMwLjIyYzAgOS45OSA4LjE3IDE3LjggMTcuNTkgMTYuOCIvPjwvc3ZnPg=="
+                                alt="" width="20px"> QUANTAS TORNEIRAS TERÃO ÁGUA QUENTE?</label>
+                            <input oninput="document.querySelector('.showtorneiras').innerText = this.value
+                            document.querySelector('consumometrocubico').innerText = (((parseInt(document.querySelector('quantidadepessoas').innerText)*this.value)*0.0002 + parseInt(document.querySelector('#TorneirasQuentes').value)*0.005) *30 + parseInt(document.querySelector('#totalpissinas').value)) .toFixed(2);
+                            document.querySelector('economiaaquecimento').innerText = ((((parseInt(document.querySelector('quantidadepessoas').innerText)*this.value)*0.0002 + parseInt(document.querySelector('#TorneirasQuentes').value)*0.005) *30 + parseInt(document.querySelector('#totalpissinas').value)) .toFixed(2)*(55*12)).toFixed(2)
+                            " type="range" id="TorneirasQuentes" step="1" max="50" value="0" class="form-range">
+                          </div>
+                        </div>
+
+                      </div>
+
+
+
+                      <div class="mt-2">
+                        <div class="row">
+                          <div class="col d-flex  align-items-center">
+
+                            <h1 class="showpiscina">0</h1> <span class="d-none d-md-flex">unidades</span>
+                          </div>
+                          <div class="col-8">
+                            <label for="piscina">
+
+                              <img
+                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgNDggNDgiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzg4ODg4OCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMiIgc3Ryb2tlLXdpZHRoPSI0IiBkPSJNMzYgMjdWOGMwLTIuMjEgMS43OS00IDQtNGg0TTEwIDI3VjhjMC0yLjIxIDEuNzktNCA0LTRoNG0tOCA4aDI2bS0yNiA4aDI2TTQgMzRsMi41IDEuMzUxYzEuNi44NjUgMy40Ljg2NSA1IDBjMS42LS44NjQgMy40LS44NjQgNSAwYzEuNi44NjUgMy40Ljg2NSA1IDBjMS42LS44NjQgMy40LS44NjQgNSAwYzEuNi44NjUgMy40Ljg2NSA1IDBjMS42LS44NjQgMy40LS44NjQgNSAwYzEuNi44NjUgMy40Ljg2NSA1IDBMNDQgMzRNNCA0MGwyLjUgMS4zNTFjMS42Ljg2NSAzLjQuODY1IDUgMGMxLjYtLjg2NCAzLjQtLjg2NCA1IDBjMS42Ljg2NSAzLjQuODY1IDUgMGMxLjYtLjg2NCAzLjQtLjg2NCA1IDBjMS42Ljg2NSAzLjQuODY1IDUgMGMxLjYtLjg2NCAzLjQtLjg2NCA1IDBjMS42Ljg2NSAzLjQuODY1IDUgMEw0NCA0MCIvPjwvc3ZnPg=="
+                                alt="" width="20px"> QUANTAS PISCINAS TERÃO ÁGUA QUENTE?</label>
+                            <input oninput="document.querySelector('.showpiscina').innerText = this.value;
+                            if(this.value > 0){document.querySelector('#quantidademcubicopiscinas').hidden=false}else{
+                              document.querySelector('#quantidademcubicopiscinas').hidden=true
+
+                            }" type="range" step="1" max="50" value="0" class="form-range">
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="mt-2" id="quantidademcubicopiscinas" hidden>
+                        <div class="row">
+                          <div class="col d-flex  align-items-center">
+
+                            <h1 class=" showpiscinaCapacidade">0</h1> <span class="d-none d-md-flex">.000 L</span>
+                          </div>
+                          <div class="col-8">
+                            <label for="piscinaCapacidade">
+
+                              <img
+                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgNDggNDgiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzg4ODg4OCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMiIgc3Ryb2tlLXdpZHRoPSI0IiBkPSJNMzYgMjdWOGMwLTIuMjEgMS43OS00IDQtNGg0TTEwIDI3VjhjMC0yLjIxIDEuNzktNCA0LTRoNG0tOCA4aDI2bS0yNiA4aDI2TTQgMzRsMi41IDEuMzUxYzEuNi44NjUgMy40Ljg2NSA1IDBjMS42LS44NjQgMy40LS44NjQgNSAwYzEuNi44NjUgMy40Ljg2NSA1IDBjMS42LS44NjQgMy40LS44NjQgNSAwYzEuNi44NjUgMy40Ljg2NSA1IDBjMS42LS44NjQgMy40LS44NjQgNSAwYzEuNi44NjUgMy40Ljg2NSA1IDBMNDQgMzRNNCA0MGwyLjUgMS4zNTFjMS42Ljg2NSAzLjQuODY1IDUgMGMxLjYtLjg2NCAzLjQtLjg2NCA1IDBjMS42Ljg2NSAzLjQuODY1IDUgMGMxLjYtLjg2NCAzLjQtLjg2NCA1IDBjMS42Ljg2NSAzLjQuODY1IDUgMGMxLjYtLjg2NCAzLjQtLjg2NCA1IDBjMS42Ljg2NSAzLjQuODY1IDUgMEw0NCA0MCIvPjwvc3ZnPg=="
+                                alt="" width="20px"> CAPACIDADE TOTAL DA PISCINAS EM LITROS?</label>
+                            <input oninput="
+                            document.querySelector('.showpiscinaCapacidade').innerText = this.value;
+                            document.querySelector('consumometrocubico').innerText = (((parseInt(document.querySelector('quantidadepessoas').innerText)*this.value)*0.0002 + parseInt(document.querySelector('#TorneirasQuentes').value)*0.005) *30 + parseInt(document.querySelector('#totalpissinas').value)) .toFixed(2)
+                            document.querySelector('economiaaquecimento').innerText = ((((parseInt(document.querySelector('quantidadepessoas').innerText)*this.value)*0.0002 + parseInt(document.querySelector('#TorneirasQuentes').value)*0.005) *30 + parseInt(document.querySelector('#totalpissinas').value)) .toFixed(2)*(55*12)).toFixed(2)
+                            " type="range" id="totalpissinas" step="1" max="50" value="0" class="form-range">
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="container d-flex justify-content-center align-items-center mt-4">
+
+
+                    <button
+                      onclick="window.location.href='https://api.whatsapp.com/send/?phone=553198872489&text=Estou vindo pelo site, minha conta atual é de aproximadamente R$'+ document.querySelector('.ws').innerText "
+                      type="button" class="btn btn-warning" style="
+                                                    width: 100%;
+                                                    max-width: 350px;
+                                                    height: 50px;
+                                                    border-radius: 35px;
+                                                    color: white;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    background-color: #ffc500;
+                                                    text-transform: uppercase;
+                                                  ">
+                      Solicitar Orçamento
+                    </button>
+                  </div>
+
+
+                </div>
+
+
+
+
+
+
+
               </div>
 
             </div>
@@ -770,8 +1258,9 @@
           justify-content: center;
           align-items: center;
         ">
-      <img class="d-none d-md-flex " src="./img/sistemaFotovoltaico.png" alt="" style="width: 900px; height: 100%" />
-      <img class="d-flex d-md-none " src="./img/ongrid.png" alt="" style="width: 100%;" />
+      <img loading="lazy" class="d-none d-md-flex " src="./img/sistemaFotovoltaico.png" alt=""
+        style="width: 900px; height: 100%" />
+      <img loading="lazy" class="d-flex d-md-none " src="./img/ongrid.png" alt="" style="width: 100%;" />
     </div>
     <div class="container p-5" style="color: white; font-weight: 100">
       <div>
@@ -808,7 +1297,8 @@
       <div class="row">
         <div class="col-md-6 col-sm-12 col-lg-6">
           <div>
-            <img src="./img/energia-solar-belo-horizonte-edificio.webp.png" alt="" style="width: 100%; height: 100%" />
+            <img loading="lazy" src="./img/energia-solar-belo-horizonte-edificio.webp.png" alt=""
+              style="width: 100%; height: 100%" />
           </div>
         </div>
         <div class="col-md-6 col-sm-12 col-lg-6">
@@ -864,7 +1354,7 @@
 
         <div class="col-md-6 col-sm-12 col-lg-3 mt-5">
           <div style="text-align: center">
-            <img src="./img/icone1.png" alt="" style="width: 50px;height: 50px;" />
+            <img loading="lazy" src="./img/icone1.png" alt="" style="width: 50px;height: 50px;" />
           </div>
           <div style="text-align: center; color: #ffc500">
             <span> Autoconsumo: </span>
@@ -878,7 +1368,7 @@
         </div>
         <div class="col-md-6 col-sm-12 col-lg-3 mt-5">
           <div style="text-align: center">
-            <img src="./img/icone2.png" alt="" style="width: 170px;height: 100%;" />
+            <img loading="lazy" src="./img/icone2.png" alt="" style="width: 170px;height: 100%;" />
           </div>
           <div style="text-align: center; color: #ffc500">
             <span> Autoconsumo remoto: </span>
@@ -889,7 +1379,7 @@
         </div>
         <div class="col-md-6 col-sm-12 col-lg-3 mt-5">
           <div style="text-align: center">
-            <img src="./img/icone3.png" alt="" style="width: 100px;height: 100%;" />
+            <img loading="lazy" src="./img/icone3.png" alt="" style="width: 100px;height: 100%;" />
           </div>
           <div style="text-align: center; color: #ffc500">
             <span> Geração compartilhada:</span>
@@ -901,7 +1391,7 @@
         </div>
         <div class="col-md-6 col-sm-12 col-lg-3 mt-5">
           <div style="text-align: center">
-            <img src="./img/icone4.png" alt="" style="width: 150px;height: 100%;" />
+            <img loading="lazy" src="./img/icone4.png" alt="" style="width: 150px;height: 100%;" />
           </div>
           <div style="text-align: center; color: #ffc500">
             <span>Geração em condomínios: </span>
@@ -947,7 +1437,7 @@
     <div class="row p-5">
       <div class="col-md-6 col-sm-12 col-lg-4">
         <div style="display: flex;text-align: center;justify-content: center;margin-top: 10px;">
-          <img src="./img/etapa1.png" alt="" style="width: 200px;height: 100%;">
+          <img loading="lazy" src="./img/etapa1.png" alt="" style="width: 200px;height: 100%;">
         </div>
         <div style="display: flex;text-align: center;justify-content: center;margin-top: 10px;">
           <h5 style="color: #263E4F;">
@@ -967,7 +1457,7 @@
       </div>
       <div class="col-md-6 col-sm-12 col-lg-4">
         <div style="display: flex;text-align: center;justify-content: center;margin-top: 10px;">
-          <img src="./img/etapa2.png" alt="" style="width: 200px;height: 100%;">
+          <img loading="lazy" src="./img/etapa2.png" alt="" style="width: 200px;height: 100%;">
         </div>
         <div style="display: flex;text-align: center;justify-content: center;margin-top: 10px;">
           <h5 style="color: #263E4F;">
@@ -986,7 +1476,7 @@
       </div>
       <div class="col-md-6 col-sm-12 col-lg-4">
         <div style="display: flex;text-align: center;justify-content: center;margin-top: 10px;">
-          <img src="./img/etapa3.png" alt="" style="width: 200px;height: 100%;">
+          <img loading="lazy" src="./img/etapa3.png" alt="" style="width: 200px;height: 100%;">
         </div>
         <div style="display: flex;text-align: center;justify-content: center;margin-top: 10px;">
           <h5 style="color: #263E4F;">
@@ -1002,7 +1492,7 @@
       </div>
       <div class="col-md-6 col-sm-12 col-lg-4">
         <div style="display: flex;text-align: center;justify-content: center;margin-top: 10px;">
-          <img src="./img/etapa4.png" alt="" style="width: 200px;height: 100%;">
+          <img loading="lazy" src="./img/etapa4.png" alt="" style="width: 200px;height: 100%;">
         </div>
         <div style="display: flex;text-align: center;justify-content: center;margin-top: 10px;">
           <h5 style="color: #263E4F;">
@@ -1021,7 +1511,7 @@
       </div>
       <div class="col-md-6 col-sm-12 col-lg-4">
         <div style="display: flex;text-align: center;justify-content: center;margin-top: 10px;">
-          <img src="./img/etapa5.png" alt="" style="width: 200px;height: 100%;">
+          <img loading="lazy" src="./img/etapa5.png" alt="" style="width: 200px;height: 100%;">
         </div>
         <div style="display: flex;text-align: center;justify-content: center;margin-top: 10px;">
           <h5 style="color: #263E4F;">
@@ -1038,7 +1528,7 @@
       </div>
       <div class="col-md-6 col-sm-12 col-lg-4">
         <div style="display: flex;text-align: center;justify-content: center;margin-top: 10px;">
-          <img src="./img/etapa6.png" alt="" style="width: 200px;height: 100%;">
+          <img loading="lazy" src="./img/etapa6.png" alt="" style="width: 200px;height: 100%;">
         </div>
         <div style="display: flex;text-align: center;justify-content: center;margin-top: 10px;">
           <h5 style="color: #263E4F;">
@@ -1068,10 +1558,10 @@
       </div>
       <div class="row mt-2">
         <div class="col-md-6 col-sm-12 col-lg-6 justify-content-center align-items-center d-flex">
-          <img src="./img/grafico1.png" alt="" width="100%" style="max-width: 450px;">
+          <img loading="lazy" src="./img/grafico1.png" alt="" width="100%" style="max-width: 450px;">
         </div>
         <div class="col-md-6 col-sm-12 col-lg-6 d-flex justify-content-center align-items-center">
-          <img src="./img/grafico2.png" alt="" width="280px">
+          <img loading="lazy" src="./img/grafico2.png" alt="" width="280px">
         </div>
       </div>
     </div>
@@ -1156,11 +1646,11 @@ padding: 30px;
     </div>
   </div>
   <div style="background-color: #f1e8e8; width: 100%;">
-    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div id="carouselTopo" class="carousel carousel-dark slide">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselTopo" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselTopo" data-bs-slide-to="1" aria-label="Slide 2"></button>
 
       </div>
       <div class="carousel-inner">
@@ -1174,7 +1664,7 @@ padding: 30px;
           <div class="row  p-5">
             <div class="col-md-6 col-sm-12 col-lg-6">
               <div style="display: flex; align-items: center;justify-content: center;">
-                <img src="./img/edificio1.png" alt="" style="border-radius: 155px;width: 150px;">
+                <img loading="lazy" src="./img/edificio1.png" alt="" style="border-radius: 155px;width: 150px;">
               </div>
               <div class="mt-3">
                 <p style="display:flex;text-align:center;justify-content:center">“Tivemos um projeto de energia solar
@@ -1190,7 +1680,7 @@ padding: 30px;
             </div>
             <div class="col-md-6 col-sm-12 col-lg-6">
               <div style="display: flex; align-items: center;justify-content: center;">
-                <img src="./img/edificio2.png" alt="" style="border-radius: 155px;width: 150px;">
+                <img loading="lazy" src="./img/edificio2.png" alt="" style="border-radius: 155px;width: 150px;">
               </div>
               <div class="mt-3">
                 <p style="display:flex;text-align:center;justify-content:center">“Atingimos nosso objetivo com usina
@@ -1214,7 +1704,7 @@ padding: 30px;
           <div class="row  p-5">
             <div class="col-md-6 col-sm-12 col-lg-6">
               <div style="display: flex; align-items: center;justify-content: center;">
-                <img src="./img/edificio1.png" alt="" style="border-radius: 155px;width: 150px;">
+                <img loading="lazy" src="./img/edificio1.png" alt="" style="border-radius: 155px;width: 150px;">
               </div>
               <div class="mt-3">
                 <p style="display:flex;text-align:center;justify-content:center">“Tivemos um projeto de energia solar
@@ -1230,7 +1720,7 @@ padding: 30px;
             </div>
             <div class="col-md-6 col-sm-12 col-lg-6">
               <div style="display: flex; align-items: center;justify-content: center;">
-                <img src="./img/edificio1.png" alt="" style="border-radius: 155px;width: 150px;">
+                <img loading="lazy" src="./img/edificio1.png" alt="" style="border-radius: 155px;width: 150px;">
               </div>
               <div class="mt-3">
                 <p style="display:flex;text-align:center;justify-content:center">“Atingimos nosso objetivo com usina
@@ -1265,7 +1755,7 @@ padding: 30px;
     <div class="row">
       <div class="col-md-6 col-sm-12 col-lg-4">
         <div>
-          <img src="./img/img1.png" alt="" width="100%">
+          <img loading="lazy" src="./img/img1.png" alt="" width="100%">
         </div>
         <div>
           <a href="" style="text-decoration: none;color: #263E4F;">
@@ -1275,7 +1765,7 @@ padding: 30px;
       </div>
       <div class="col-md-6 col-sm-12 col-lg-4">
         <div>
-          <img src="./img/img2.png" alt="" width="100%">
+          <img loading="lazy" src="./img/img2.png" alt="" width="100%">
         </div>
         <div>
           <a href="" style="text-decoration: none;color: #263E4F;">
@@ -1285,7 +1775,7 @@ padding: 30px;
       </div>
       <div class="col-md-6 col-sm-12 col-lg-4">
         <div>
-          <img src="./img/img3.png" alt="" width="100%">
+          <img loading="lazy" src="./img/img3.png" alt="" width="100%">
         </div>
         <div>
           <a href="" style="text-decoration: none;color: #263E4F;">
@@ -1329,24 +1819,24 @@ padding: 30px;
     <div class="row">
       <div class="col-md-6 col-sm-12 col-lg-6">
         <div style="display: flex;align-items: center;justify-content: center; margin-bottom: 20px;">
-          <img src="./img/logo.png" alt="">
+          <img loading="lazy" src="./img/logo.png" alt="">
         </div>
       </div>
       <div class="col-md-6 col-sm-12 col-lg-6">
         <div>
-          <img src="./img/whatsapp.png" alt="">
+          <img loading="lazy" src="./img/whatsapp.png" alt="">
           <span style="color: white;">Orçamentos: <a href="">(21) 99786-1897</a></span>
         </div>
         <div class="mt-2">
-          <img src="./img/whatsapp.png" alt="">
+          <img loading="lazy" src="./img/whatsapp.png" alt="">
           <span style="color: white;">Fale conosco: <a href="">(21) 3936-0411</a></span>
         </div>
         <div class="mt-2">
-          <img src="./img/email.png" alt="">
+          <img loading="lazy" src="./img/email.png" alt="">
           <span style="color: white;">Fale conosco: <a href="">contato@sunrioenergiasolar.com.br</a></span>
         </div>
         <div class="mt-2">
-          <img src="./img/instagran.png" alt="">
+          <img loading="lazy" src="./img/instagran.png" alt="">
           <span style="color: white;">Fale conosco: <a href="">sunrioenergiasolar.com.br</a></span>
         </div>
 
@@ -1418,5 +1908,18 @@ padding: 30px;
 
 <script src="./popper.min.js"></script>
 <script src="./bootstrap.min.js"></script>
+<script>
+  document.querySelector('#imagefundo').style.backgroundImage = 'url(./img/image.png)';
+  document.querySelector('#imagefundo2').style.backgroundImage = 'url(https://aquakent.com.br/blog/wp-content/uploads/2022/08/aquecedor-solar-economia-1280x640.jpg)';
+  document.querySelector('#imagefundo3').style.backgroundImage = 'url(./img/image.png)';
+  function showNivel(nivel) {
+
+    let a = document.querySelectorAll('.niveis')
+    for (let N of a) {
+      N.classList.remove('actived')
+    }
+    document.querySelector('.nivel' + nivel).classList.add('actived');
+  }
+</script>
 
 </html>
