@@ -184,3 +184,16 @@ area {
     align-items: center;
     padding-top: 2rem;
 }
+
+.clientes {
+    filter: grayscale(1);
+}
+
+.clientes:hover {
+    filter: none;
+    opacity: 1;
+    cursor: pointer;
+    scale: 1.2;
+    border-radius: 0;
+    z-index: 1000;
+}
