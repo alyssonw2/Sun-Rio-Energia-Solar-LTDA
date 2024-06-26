@@ -23,6 +23,11 @@ h1 {
 
 }
 
+.form-check-input:checked {
+    background-color: #FFC107;
+    border-color: #FFC107;
+}
+
 .actived img {
     filter: brightness(0) invert(100%);
 }
@@ -46,11 +51,7 @@ button {
     animation-duration: 1s;
 }
 
-img:hover {
-    animation: pulse;
-    animation-duration: 500ms;
-    animation-fill-mode: backwards;
-}
+
 
 a {
     text-decoration: none;

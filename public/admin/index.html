@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Firebase CRUD Example</title>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+</head>
+<style>
+    .editable-text {
+        display: inline-block;
+        cursor: pointer;
+        padding: 5px;
+        border: 1px dashed transparent;
+    }
+
+    .editable-text:hover {
+        border: 1px dashed gray;
+    }
+</style>
+
+<body>
+    <h1>Firebase CRUD Example</h1>
+
+    <input type="file" id="fileInput" />
+    <button onclick="uploadImage()">Upload Image</button>
+
+    <button onclick="deleteItem()">Delete Item</button>
+
+    <div>
+        <button onclick="listAllItems()">List All Items</button>
+        <h1>Itens</h1>
+        <div id="galeria"></div>
+    </div>
+
+
+
+
+    <h1>Double Click to Edit Text</h1>
+    <div class="editable-text" id="editableText">Double-click me to edit!</div>
+
+    <script>
+        document.getElementById('editableText').addEventListener('dblclick', function () {
+            var textElement = this;
+            var currentText = textElement.innerText;
+
+            var inputElement = document.createElement('input');
+            inputElement.type = 'text';
+            inputElement.value = currentText;
+            inputElement.style.width = textElement.offsetWidth + 'px';
+            textElement.parentNode.replaceChild(inputElement, textElement);
+            inputElement.focus();
+            inputElement.addEventListener('blur', function () {
+                var newText = this.value;
+                var newTextElement = document.createElement('div');
+                newTextElement.className = 'editable-text';
+                newTextElement.id = 'editableText';
+                newTextElement.innerText = newText;
+
+                this.parentNode.replaceChild(newTextElement, this);
+
+                // Reattach the event listener for the new element
+                newTextElement.addEventListener('dblclick', arguments.callee);
+            });
+        });
+    </script>
+
+
+    <script>
+        // Configuração do Firebase
+        var firebaseConfig = {
+            apiKey: "AIzaSyBVSevRxXee1fkrrJM_oWI73qGlO3pCshE",
+            authDomain: "sun-rio-energia-solar-ltda.firebaseapp.com",
+            databaseURL: "https://sun-rio-energia-solar-ltda-default-rtdb.firebaseio.com",
+            projectId: "sun-rio-energia-solar-ltda",
+            storageBucket: "sun-rio-energia-solar-ltda.appspot.com",
+            messagingSenderId: "167706396265",
+            appId: "1:167706396265:web:b1eed1ff56c608813804f8",
+            measurementId: "G-SR9FN46M97"
+        };
+        // Inicializa o Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // Referência ao Firebase Realtime Database
+        var database = firebase.database();
+
+        // Referência ao Firebase Realtime Database e Storage
+        var database = firebase.database();
+        var storage = firebase.storage();
+
+        // DATA BASE -----------------------------------------
+
+        // Referência ao Firestore
+        var db = firebase.firestore();
+
+
+
+        // Função para adicionar um item
+        function addItemDB() {
+            let colecaonome = "Itens"
+            db.collection(colecaonome).add({
+                "title": "Titulo",
+                "content": "Conteudo"
+            })
+                .then((docRef) => {
+                    console.log("Document written with ID: ", docRef.id);
+                    listItems();
+                })
+                .catch((error) => {
+                    console.error("Error adding document: ", error);
+                });
+        }
+
+
+        // Função para listar todos os itens
+        function listItemsDB() {
+            let colecaonome = "Itens"
+            db.collection(colecaonome).get().then((querySnapshot) => {
+                var itemsDiv = document.getElementById('items');
+
+                querySnapshot.forEach((doc) => {
+                    var item = doc.data();
+                    console.log(item)
+                });
+            });
+        }
+
+
+        // Função para editar um item
+        function editItemDB(id, currentTitle, currentContent) {
+            let colecaonome = "Itens"
+            var newTitle = currentTitle;
+            var newContent = currentContent;
+
+            if (newTitle !== null && newContent !== null) {
+                db.collection(colecaonome).doc(id).update({
+                    title: newTitle,
+                    content: newContent
+                })
+                    .then(() => {
+                        console.log("Document successfully updated!");
+                        listItems();
+                    })
+                    .catch((error) => {
+                        console.error("Error updating document: ", error);
+                    });
+            }
+        }
+
+
+
+        // Função para deletar um item
+        function deleteItemDB(id) {
+            let colecaonome = "Itens"
+            db.collection(colecaonome).doc(id).delete()
+                .then(() => {
+                    console.log("Document successfully deleted!");
+                }).catch((error) => {
+                    console.error("Error removing document: ", error);
+                });
+        }
+
+
+        // DATA BASE -----------------------------------------
+
+
+        // DATA BASE REAL TIME -----------------------------------------
+
+        // Função Create
+        function createUser(userId, name, email) {
+            firebase.database().ref('users/' + userId).set({
+                username: name,
+                email: email
+            }).then(() => {
+                console.log('User created successfully');
+            }).catch((error) => {
+                console.error('Error creating user:', error);
+            });
+        }
+
+        // Função Read
+        function readUser(userId) {
+            var userRef = firebase.database().ref('users/' + userId);
+            userRef.on('value', (snapshot) => {
+                const data = snapshot.val();
+                console.log('User data:', data);
+            }, (error) => {
+                console.error('Error reading user data:', error);
+            });
+        }
+
+        // Função Update
+        function updateUser(userId, name, email) {
+            var updates = {};
+            if (name) updates['/users/' + userId + '/username'] = name;
+            if (email) updates['/users/' + userId + '/email'] = email;
+
+            firebase.database().ref().update(updates)
+                .then(() => {
+                    console.log('User updated successfully');
+                }).catch((error) => {
+                    console.error('Error updating user:', error);
+                });
+        }
+
+        // Função Delete
+        function deleteUser(userId) {
+            firebase.database().ref('users/' + userId).remove()
+                .then(() => {
+                    console.log('User deleted successfully');
+                }).catch((error) => {
+                    console.error('Error deleting user:', error);
+                });
+        }
+
+
+
+        // DATA BASE REAL TIME -----------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //UPLOAD PARA DATA STORE
+
+        // Função para substituir caracteres proibidos
+        function encodeFileName(fileName) {
+            return fileName.replace(/\./g, '%2E').replace(/\#/g, '%23').replace(/\$/g, '%24').replace(/\[/g, '%5B').replace(/\]/g, '%5D');
+        }
+
+        // Função para reverter substituições de caracteres
+        function decodeFileName(encodedFileName) {
+            return encodedFileName.replace(/%2E/g, '.').replace(/%23/g, '#').replace(/%24/g, '$').replace(/%5B/g, '[').replace(/%5D/g, ']');
+        }
+
+
+
+
+        // Função para fazer o upload da imagem
+        function uploadImage() {
+            var fileInput = document.getElementById('fileInput');
+            var file = fileInput.files[0];
+            var storageRef = storage.ref('images/' + file.name);
+            var uploadTask = storageRef.put(file);
+
+            uploadTask.on('state_changed',
+                (snapshot) => {
+                    // Observa os estados de progresso, pausa e recomeço
+                    var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                    console.log('Upload is ' + progress + '% done');
+                },
+                (error) => {
+                    // Lida com erros de upload
+                    console.error('Upload failed:', error);
+                },
+                () => {
+                    // Lida com upload bem-sucedido
+                    uploadTask.snapshot.ref.getDownloadURL().then((downloadURL) => {
+                        console.log('File available at', downloadURL);
+                        // Salva a URL da imagem no Realtime Database
+                        saveImageUrl(file.name, downloadURL);
+                    });
+                }
+            );
+        }
+
+        // Função para salvar a URL da imagem no Realtime Database
+        function saveImageUrl(fileName, url) {
+            var encodedFileName = encodeFileName(fileName);
+            firebase.database().ref('images/' + encodedFileName).set({
+                url: url
+            }).then(() => {
+                console.log('Image URL saved successfully');
+            }).catch((error) => {
+                console.error('Error saving image URL:', error);
+            });
+        }
+
+        // Função para listar todos os itens do Realtime Database
+        function listAllItems() {
+            var imagesRef = firebase.database().ref('images');
+            var galeria = document.getElementById('galeria');
+            galeria.innerHTML = ''; // Limpa a galeria antes de listar os itens
+
+            imagesRef.once('value', (snapshot) => {
+                snapshot.forEach((childSnapshot) => {
+                    var childKey = decodeFileName(childSnapshot.key);
+                    var childData = childSnapshot.val();
+
+                    // Cria um elemento img e adiciona à galeria
+                    var img = document.createElement('img');
+                    img.src = childData.url;
+                    img.alt = childKey;
+                    img.style.width = '100px'; // Ajuste conforme necessário
+                    img.style.margin = '10px'; // Ajuste conforme necessário
+
+                    galeria.appendChild(img);
+                });
+            }).catch((error) => {
+                console.error('Error listing items:', error);
+            });
+        }
+
+        // Função para deletar um item do Storage e do Realtime Database
+        function deleteItem(fileName) {
+            var encodedFileName = encodeFileName(fileName);
+
+            // Deletar do Storage
+            var storageRef = storage.ref('images/' + fileName);
+            storageRef.delete().then(() => {
+                console.log('File deleted successfully from Storage');
+                // Deletar do Realtime Database
+                return firebase.database().ref('images/' + encodedFileName).remove();
+            }).then(() => {
+                console.log('File metadata deleted successfully from Database');
+            }).catch((error) => {
+                console.error('Error deleting file:', error);
+            });
+        }
+
+
+        // Exemplos de uso
+        /*
+         createUser('1', 'John Doe', 'john.doe@example.com');
+         readUser('1');
+         updateUser('1', 'Jane Doe', 'jane.doe@example.com');
+         deleteUser('1');
+        */
+    </script>
+</body>
+
+</html>
