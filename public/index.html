@@ -21,11 +21,13 @@
   <div style="background-color: #347392; width: 100%; padding-top: 40px;" class="pb-5">
     <div class="container">
       <div class="row ">
-
+        <a href="../" class="mb-3">
+          <img loading="lazy" src="./img/logocolorida.png" alt="" width="150px">
+        </a>
         <div
           class="menu d-none d-sm-flex  col-lg-6 d-md-flex col-lg-4 d-flex justify-content-center  align-items-center gap-4">
 
-          <img loading="lazy" src="./img/logocolorida.png" alt="" width="150px">
+
 
           <span>
             <a href="./quemSomos/" style="text-decoration: none; font-weight: 800;">Quem Somos</a>
@@ -928,47 +930,50 @@
           energético de sua residência ou empresa.
         </span>
       </div>
-      <div class="container" style="
-            background-color: #adadad;
-            max-width: 500px;
-            width: 100%;
-            height: 100%;
-            padding: 20px;border-radius: 10px;;
-            margin-top: 15px;
-          ">
+      <form onsubmit="event.preventDefault(); enviar(this)" class="container" style="
+          background-color: #adadad;
+          max-width: 500px;
+          width: 100%;
+          height: 100%;
+          padding: 20px;border-radius: 10px;;
+          margin-top: 15px;
+        ">
         <div style="margin-top: 5px;">
-          <input type="text" class="form-control" placeholder="Nome">
+          <input type="text" class="form-control" name="nome" required placeholder="Nome">
         </div>
         <div style="margin-top: 15px;">
-          <input type="text" class="form-control" placeholder="Telefone">
+          <input type="text" class="form-control" name="sobrenome" required placeholder="Sobrenome">
+        </div>
+        <div style="margin-top: 15px;">
+          <input type="text" class="form-control" name="telefone" required placeholder="Telefone">
+        </div>
+        <div style="display: flex;text-align: center;justify-content: center;margin-top: 15px;">
+
         </div>
         <div>
           <span>Não deixe de fornecer o código do país + 55 e o DDD</span>
         </div>
         <div style="margin-top: 15px;">
-          <input type="text" class="form-control" placeholder="E-mail">
+          <input type="text" name="email" class="form-control" required placeholder="E-mail">
         </div>
         <div style="margin-top: 15px;">
-          <input type="text" class="form-control" placeholder=" Endereço ou CEP *">
+          <input type="text" name="valorConta" class="form-control" required
+            placeholder=" N - Valor Medio Conta Energia *">
         </div>
-        <div class="mt-3">
-          <span>Selecione o orçamento que você deseja:</span>
-          <select class="form-select mt-3" aria-label="Default select example">
-            <option value="1">Energia solar</option>
-            <option value="2">Aquecimento de banho ou piscina</option>
-          </select>
-        </div>
-        <div style="margin-top: 15px;">
-          <span>Adicione um anexo de sua conta de luz:</span>
-          <input type="file" class="form-control mt-3">
-        </div>
-
         <div>
-          <button class="btn"
-            style="background-color: #263E4F;width: 100%;color: white;margin-top: 15px;">Enviar</button>
+          <span>Informe aqui o valor médio da sua conta ou o valor total da energia que você pretende gerar</span>
+        </div>
+        <div style="margin-top: 15px;">
+          <input type="text" name="cep" class="form-control" required placeholder=" Endereço ou CEP *">
+        </div>
+        <div>
+          <button class="btn" type="submit"
+            style="background-color: #263E4F;width: 100%;color: white;margin-top: 15px;">
+            Enviar
+          </button>
         </div>
 
-      </div>
+      </form>
     </div>
   </div>
   <div style="
@@ -1443,7 +1448,7 @@ padding: 30px;
             Faça uma cotação e constate as vantagens da energia solar.
           </span>
         </div>
-        <div class="container" style="
+        <form onsubmit="event.preventDefault(); enviar(this)" class="container" style="
     background-color: #adadad;
     max-width: 500px;
     width: 100%;
@@ -1452,13 +1457,13 @@ padding: 30px;
     margin-top: 15px;
   ">
           <div style="margin-top: 5px;">
-            <input type="text" class="form-control" placeholder="Nome">
+            <input type="text" class="form-control" name="nome" required placeholder="Nome">
           </div>
           <div style="margin-top: 15px;">
-            <input type="text" class="form-control" placeholder="Sobrenome">
+            <input type="text" class="form-control" name="sobrenome" required placeholder="Sobrenome">
           </div>
           <div style="margin-top: 15px;">
-            <input type="text" class="form-control" placeholder="Telefone">
+            <input type="text" class="form-control" name="telefone" required placeholder="Telefone">
           </div>
           <div style="display: flex;text-align: center;justify-content: center;margin-top: 15px;">
 
@@ -1467,27 +1472,53 @@ padding: 30px;
             <span>Não deixe de fornecer o código do país + 55 e o DDD</span>
           </div>
           <div style="margin-top: 15px;">
-            <input type="text" class="form-control" placeholder="E-mail">
+            <input type="text" name="email" class="form-control" required placeholder="E-mail">
           </div>
           <div style="margin-top: 15px;">
-            <input type="text" class="form-control" placeholder=" N - Valor Medio Conta Energia *">
+            <input type="text" name="valorConta" class="form-control" required
+              placeholder=" N - Valor Medio Conta Energia *">
           </div>
           <div>
             <span>Informe aqui o valor médio da sua conta ou o valor total da energia que você pretende gerar</span>
           </div>
           <div style="margin-top: 15px;">
-            <input type="text" class="form-control" placeholder=" Endereço ou CEP *">
+            <input type="text" name="cep" class="form-control" required placeholder=" Endereço ou CEP *">
           </div>
           <div>
-            <button class="btn" style="background-color: #263E4F;width: 100%;color: white;margin-top: 15px;">
+            <button class="btn" type="submit"
+              style="background-color: #263E4F;width: 100%;color: white;margin-top: 15px;">
               Enviar
             </button>
           </div>
 
-        </div>
+        </form>
       </div>
     </div>
   </div>
+
+
+  <script>
+    function enviar(form) {
+      const formData = new FormData(form);
+      const nome = formData.get('nome');
+      const sobrenome = formData.get('sobrenome');
+      const telefone = formData.get('telefone');
+      const email = formData.get('email');
+      const valorConta = formData.get('valorConta');
+      const cep = formData.get('cep');
+
+      const mensagem = `Meu nome e: ${nome}%0A`
+        + `${sobrenome}%0A`
+        + `Telefone: ${telefone}%0A`
+        + `Email: ${email}%0A`
+        + `Valor Médio Conta: ${valorConta}%0A`
+        + `Endereço ou CEP: ${cep}`;
+
+      const url = `https://api.whatsapp.com/send/?phone=5521997861897&text=${mensagem}`;
+      window.open(url, '_blank');
+    }
+  </script>
+
   <div style="background-color: #f4f4f4; width: 100%;">
     <div id="carouselTopo" class="carousel carousel-dark slide">
       <div class="carousel-indicators">
@@ -1740,17 +1771,7 @@ padding: 30px;
   margin-top: 30px;
   
 ">
-      <button type="button" class="btn btn-warning" style="
-    width: 200px;
-    height: 50px;
-    border-radius: 35px;
-    color: #263E4F;
-    background-color: white;
-    border-color: #263E4F;
-  font-weight: bold;
-  ">
-        Todas as novidades
-      </button>
+
     </div>
   </div>
 
@@ -1841,12 +1862,13 @@ padding: 30px;
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-
+      <p><a style="color: black;" href="./">Principal</a></p>
       <p><a style="color: black;" href="./quemSomos/">Quem Somos</a></p>
-      <p><a style="color: black;" href="">Projetos</a></p>
-      <p><a style="color: black;" href="">Benefícios</a></p>
-      <p><a style="color: black;" href="">Contato</a></p>
-      <span> <a href="" style="text-decoration: underline;font-size: 0.8rem; color: black;">(21)
+      <p><a style="color: black;" href="./projetos/">Projetos</a></p>
+      <p><a style="color: black;" href="./beneficios/">Benefícios</a></p>
+      <p><a style="color: black;" href="./contato/">Contato</a></p>
+      <span> <a href="https://api.whatsapp.com/send/?phone=5521997861897&text=Ol%C3%A1"
+          style="text-decoration: underline;font-size: 0.8rem; color: black;">(21)
           3936-0411</a>
       </span>
     </div>
@@ -1973,5 +1995,7 @@ padding: 30px;
     checkPosition(); // Checa a posição inicial
   });
 </script>
+
+<script src="./sendEmail.js"></script>
 
 </html>
