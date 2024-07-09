@@ -14,9 +14,82 @@
   <link rel="stylesheet" href="../style.css" />
   <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.6/underscore-min.js"
+    integrity="sha512-2V49R8ndaagCOnwmj8QnbT1Gz/rie17UouD9Re5WxbzRVUGoftCu5IuqqtAM9+UC3fwfHCSJR1hkzNQh/2wdtg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <link rel="stylesheet" href="./main.css">
+
+  <script src="https://www.heliotek.com.br/portal/_modelo/js/vendor/modernizr-custom.min.js"></script>
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+  <style>
+    .icon-habitacao,
+    .icon-apartament,
+    .icon-industry {
+      font-size: 24px;
+      /* Tamanho do ícone */
+      margin-right: 8px;
+      /* Espaço entre o ícone e o texto */
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .dimensione .barra-status--progress {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 5px;
+      background: #FF9800;
+      border-radius: 50px;
+    }
+
+    .dimensione .form-control {
+      width: 100%;
+      height: 60px;
+      color: #575757;
+      border: 1px solid #575757;
+      border-radius: 20px;
+      font-size: 24px;
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    .dimensione .btn-default {
+      padding: 15px 50px;
+      background: #FF9800;
+      color: #fff;
+      border: none;
+      font-size: 18px;
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+  </style>
+
 </head>
 
+
 <body>
+
+
+
   <div style="background-color: #347392; width: 100%; padding-top: 40px;" class="pb-5">
     <div class="container">
       <div class="row ">
@@ -45,6 +118,9 @@
           </span>
           <span>
             <a href="https://sunrioenergiasolar.blogspot.com" style="text-decoration: none; font-weight: 800;">Blog</a>
+          </span>
+          <span>
+            <a href="./Loja" style="text-decoration: none; font-weight: 800;">Loja</a>
           </span>
         </div>
 
@@ -134,25 +210,26 @@
   </div>
 
   <!-- Bloco -->
-  <div class="mt-3 mb-5 p-5" style="background-color: transparent;">
+  <div class="mt-3 mb-5 " style="background-color: transparent;">
     <div class="container">
       <div class="row mt-5">
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-6 col-lg-4">
           <div style="background-image: url('../img/sAsBanho.jpg');
                     background-position: center;
                     background-size: cover;
-                    width: 400px;
-                    height: 430px;
+                    min-width: 300px;
+                    width: 100%;
+                    height: 450px;
                     border-radius: 20px;
                     "></div>
 
         </div>
 
-        <div class="col-sm-12 col-md-8">
+        <div class="col-sm-12 col-md-6 col-lg-8">
 
-          <div>
+          <div class="">
             <h1 style="color:#025c97">Sobre</h1>
-            <p class="mt-2">
+            <p class="mt-2 ">
               O chuveiro elétrico é responsável por cerca de 30% da conta de luz. Usando a radiação solar para fornecer
               água quente para a casa, o sistema de aquecimento para banho é uma alternativa eficiente com rápido
               retorno financeiro e qualidade. Com suas placas especiais para captação da água, ou coletores, é feito um
@@ -197,184 +274,1049 @@
     text-align:center;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
     font-weight: 700;
-    ">
-    <h1>Sistema de aquecimento de piscinas:</h1>
+    " class="mb-4">
+    <h1>Calculadra aquecimento de piscinas</h1>
+
   </div>
+  <h5 class=" d-flex align-items-center justify-content-center">
+    <div>Preencha seus dados para começarmos</div>
+  </h5>
   <!-- Bloco -->
 
-  <div class="mt-2 mb-5 p-5">
-
-    <div class="container">
-      <div class="row" id="simuladorPiscinas">
-        <div class="col-md-6  mt-4 ">
-          <div class=" d-flex  align-items-center" style="height: 400px;">
+  <div class="mt-2 mb-5 ">
 
 
-            <h1>SIMULADOR - <br> AQUECIMENTO <br> DE PISCINAS</h1>
+    <main class="main">
+      <div class="interna">
+
+
+
+        <div class="box-breadcrumb">
+          <div class="container">
 
           </div>
         </div>
 
 
-        <div class="col-md-6 col-sm-12">
-          <div class="mt-5 " style="background-color: #ffffff;">
+
+        <div class="container" id="simuladorPiscinas">
 
 
 
+          <div class="container">
+            <div class="dimensione">
+              <input type="hidden" name="refazerDimensione">
 
-            <div class="">
-              <div class="">
-                <div>
-                  <h1>1- QUANTAS PISCINAS ? </h1>
-                  <div class="mb-3">
-                    <label for="piscina" class="form-label">Piscinas <b class="piscina">1</b></label>
-                    <input type="range" id="piscina" oninput="document.querySelector('.piscina').innerText = this.value"
-                      class="form-range" value="1" min="0" max="50" step="1" />
+
+              <div id="form" class="">
+                <form id="FomularioDimensione" autocomplete="none" onsubmit="return preencherForm();"
+                  novalidate="novalidate">
+                  <input type="hidden" id="LeadId" name="LeadId" value="">
+                  <input type="hidden" id="IsDimensione" name="IsDimensione" value="False">
+                  <input type="hidden" id="ParaOndAquecimento_c" name="ParaOndAquecimento_c">
+                  <input type="hidden" id="QuantPessoaCasa_c" name="QuantPessoaCasa_c" value="">
+                  <input type="hidden" id="Quantidade_c" name="Quantidade_c" value="">
+                  <input type="hidden" id="QuantidadeTorneiras_c" name="QuantidadeTorneiras_c" value="">
+                  <input type="hidden" id="ComercialTipo" name="ComercialTipo" value="">
+                  <input type="hidden" id="NumeroCasaComercial" name="NumeroCasaComercial" value="">
+                  <input type="hidden" id="AreaPiscina_c" name="AreaPiscina_c" value="">
+                  <input type="hidden" id="TipoSolucaoCasa_c" name="TipoSolucaoCasa_c" value="">
+                  <input type="hidden" id="CodigoModel" name="CodigoModel" value="0">
+                  <input type="hidden" id="IsCompleto" name="IsCompleto" value="False">
+                  <input type="hidden" id="TipoSolucaoPiscina_c" name="TipoSolucaoPiscina_c" value="">
+                  <input type="hidden" id="ComercialObservacoes_c" name="ComercialObservacoes_c" value="">
+
+
+
+                  <div class="box-dimensione form">
+                    <div class="form-group form-group--nome">
+                      <label for="nome">Nome e Sobrenome</label>
+                      <input class="form-control " id="Name" name="Name" autocomplete="none" value=""
+                        placeholder="Nome e Sobrenome" type="text" required="">
+                    </div>
+
+                    <div class="form-group form-group--email">
+                      <label for="email">E-mail</label>
+                      <input class="form-control" name="Email_c" id="Email_c" autocomplete="off" placeholder="E-mail"
+                        type="email" required="">
+                    </div>
+
+                    <div class="form-group form-group--telefone">
+                      <label for="telefone">Telefone</label>
+                      <input class="form-control" maxlength="15" autocomplete="none" onkeydown="mascara(this, mtel);"
+                        id="TelefoneResidencial_c" name="TelefoneResidencial_c" required="" placeholder="Telefone"
+                        type="text">
+                    </div>
+                  </div>
+                  <div class="box-dimensione form" style="justify-content:flex-start!important;">
+
+                    <div hidden class="form-group form-group--estado">
+                      <label for="Estado_c">Estado</label>
+                      <input type="hidden" name="hdnEstado">
+                      <select class="form-control" id="Estado_c" name="Estado_c" onchange="ComboCidade(this.value)">
+                        <option value="">Selecione</option>
+
+                        <option value="AC">AC</option>
+
+                        <option value="AL">AL</option>
+
+                        <option value="AM">AM</option>
+
+                        <option value="AP">AP</option>
+
+                        <option value="BA">BA</option>
+
+                        <option value="CE">CE</option>
+
+                        <option value="DF">DF</option>
+
+                        <option value="ES">ES</option>
+
+                        <option value="GO">GO</option>
+
+                        <option value="MA">MA</option>
+
+                        <option value="MG">MG</option>
+
+                        <option value="MS">MS</option>
+
+                        <option value="MT">MT</option>
+
+                        <option value="PA">PA</option>
+
+                        <option value="PB">PB</option>
+
+                        <option value="PE">PE</option>
+
+                        <option value="PI">PI</option>
+
+                        <option value="PR">PR</option>
+
+                        <option value="RJ">RJ</option>
+
+                        <option value="RN">RN</option>
+
+                        <option value="RO">RO</option>
+
+                        <option value="RR">RR</option>
+
+                        <option value="RS">RS</option>
+
+                        <option value="SC">SC</option>
+
+                        <option value="SE">SE</option>
+
+                        <option value="SP">SP</option>
+
+                        <option value="TO">TO</option>
+                      </select>
+                    </div>
+
+                    <div hidden class="form-group form-group--cidade">
+                      <label for="Cidade_c">Cidade</label>
+                      <input type="hidden" name="hdnCidade">
+                      <select class="form-control" id="Cidade_c" name="Cidade_c">
+                        <option value="">Selecione uma cidade</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group" style="margin-top: 40px;">
+                      <button id="btnDimensionar" class="btn btn-default cliqueorcamentopasso1">
+                        Continuar
+                      </button>
+                    </div>
+
+                  </div>
+                  <div class="form-group form-group--checkbox">
+                    <label><input name="IsNewsLetter" id="IsNewsLetter" checked="" value="True" type="checkbox">Aceito
+                      receber comunicados por e-mail, SMS e whatsapp </label><br>
+                    <label class="vermelhoJQ">
+                      <input name="privacidade" id="privacidade" type="checkbox" required="" value="Privacidade"
+                        checked>Li e concordo
+                      com a
+
+                      <a href="#politicaPrivacidade" class="politicaprivacidade">
+                        Política de Privacidade.
+                      </a>
+                      <br>
+                    </label>
+                  </div>
+                </form>
+              </div>
+
+
+
+              <div id="n1" class="hide">
+                <div id="adwordorcamento" class="adwordorcamento"></div>
+
+                <h1 class="section-title">
+                  <strong>Para onde é</strong> o aquecimento?
+                </h1>
+
+                <div class="box-dimensione n1">
+
+                  <a class="dimensione--item d-flex flex-column gap-2 justify-content-center align-items-center"
+                    href="javascript:void(0)" onclick="nivel6('CASA')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                      <path fill="#888888" d="M12 18a3.5 3.5 0 1 1 3.5-3.5A3.504 3.504 0 0 1 12 18" opacity=".5" />
+                      <path fill="#888888"
+                        d="M14.64 16.772a3.452 3.452 0 0 1-5.28 0A4.988 4.988 0 0 0 7 21a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1a4.988 4.988 0 0 0-2.36-4.228" />
+                      <path fill="#888888"
+                        d="M21 12a.996.996 0 0 1-.664-.252L12 4.338l-8.336 7.41a1 1 0 0 1-1.328-1.496l9-8a.999.999 0 0 1 1.328 0l9 8A1 1 0 0 1 21 12"
+                        opacity=".5" />
+                      <path fill="#888888"
+                        d="m12 4.338l-8 7.111V21a1 1 0 0 0 1 1h3a1 1 0 0 1-1-1a4.988 4.988 0 0 1 2.36-4.228A3.469 3.469 0 0 1 8.5 14.5a3.5 3.5 0 0 1 7 0a3.469 3.469 0 0 1-.86 2.272A4.988 4.988 0 0 1 17 21a1 1 0 0 1-1 1h3a1 1 0 0 0 1-1v-9.551Z"
+                        opacity=".25" />
+                    </svg>
+
+                    <div>Casa</div>
+                  </a>
+
+                  <a class="dimensione--item d-flex flex-column gap-2 justify-content-center align-items-center"
+                    href="javascript:void(0)" onclick="nivel6('APARTAMENTO')">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                      <path fill="#888888"
+                        d="M3 21V7h4V3h10v8h4v10h-8v-4h-2v4zm2-2h2v-2H5zm0-4h2v-2H5zm0-4h2V9H5zm4 4h2v-2H9zm0-4h2V9H9zm0-4h2V5H9zm4 8h2v-2h-2zm0-4h2V9h-2zm0-4h2V5h-2zm4 12h2v-2h-2zm0-4h2v-2h-2z" />
+                    </svg>
+
+
+                    Apartamento
+                  </a>
+
+                  <a class="dimensione--item d-flex flex-column gap-2 justify-content-center align-items-center"
+                    href="javascript:void(0)" onclick="nivel1('A_COMERCIAL')">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 512 512">
+                      <path fill="#888888"
+                        d="M459.26 96L328 225.7V96h-34.525L168 223.267V16H16v480h480V96ZM464 464H48V48h88v216h36.778L296 139.018V264h38.764L464 136.3Z" />
+                      <path fill="#888888"
+                        d="M136 328v8h32v-32h-32zm0 48h32v32h-32zm80-48v8h32v-32h-32zm0 48h32v32h-32zm80-48v8h32v-32h-32zm0 48h32v32h-32zm80-72h32v32h-32zm0 72h32v32h-32z" />
+                    </svg>
+
+                    Comércio ou Indústria
+                  </a>
+                </div>
+
+                <div hidden class="form-group">
+                  <a id="btnVoltarN1" class="btn btn-back" href="javascript:void(0)" style="bottom:50px;"
+                    onclick="btnVoltar('form','n1',20)">
+                    Voltar
+                  </a>
+                </div>
+              </div>
+
+
+              <div id="n7" class="hide">
+                <h1 class="section-title">
+                  <strong>Qual&nbsp;</strong> solução <br>
+                  para aquecer a <strong>piscina ?</strong>
+                </h1>
+
+                <div class="box-dimensione n1">
+                  <a class="dimensione--item" href="javascript:void(0)" onclick="TipoPiscina('AQUECIMENTO_SOLAR')">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                      <path fill="#888888"
+                        d="M11 3V2q0-.425.288-.712T12 1t.713.288T13 2v1q0 .425-.288.713T12 4t-.712-.288T11 3m0 19v-1q0-.425.288-.712T12 20t.713.288T13 21v1q0 .425-.288.713T12 23t-.712-.288T11 22m11-9h-1q-.425 0-.712-.288T20 12t.288-.712T21 11h1q.425 0 .713.288T23 12t-.288.713T22 13M3 13H2q-.425 0-.712-.288T1 12t.288-.712T2 11h1q.425 0 .713.288T4 12t-.288.713T3 13m16.75-7.325l-.35.35q-.275.275-.687.275T18 6q-.275-.275-.288-.687t.263-.713l.375-.375q.275-.3.7-.3t.725.3t.288.725t-.313.725M6.025 19.4l-.375.375q-.275.3-.7.3t-.725-.3t-.288-.725t.313-.725l.35-.35q.275-.275.688-.275T6 18q.275.275.288.688t-.263.712m12.3.35l-.35-.35q-.275-.275-.275-.687T18 18q.275-.275.688-.287t.712.262l.375.375q.3.275.3.7t-.3.725t-.725.288t-.725-.313M4.6 6.025l-.375-.375q-.3-.275-.3-.7t.3-.725t.725-.288t.725.313l.35.35q.275.275.275.688T6 6q-.275.275-.687.288T4.6 6.025M12 18q-2.5 0-4.25-1.75T6 12t1.75-4.25T12 6t4.25 1.75T18 12t-1.75 4.25T12 18" />
+                    </svg>
+
+                    Aquecimento&nbsp;Solar
+                  </a>
+
+                  <a class="dimensione--item" href="javascript:void(0)" onclick="TipoPiscina('BOMBA_DE_CALOR')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="60" viewBox="0 0 576 512">
+                      <path fill="#888888"
+                        d="M112 0C85.5 0 64 21.5 64 48v208H48c-26.5 0-48 21.5-48 48v96c0 8 2 15.6 5.4 22.2c3.8-1.7 7.8-3.1 12-4.1c13.1-3.1 26.7-9.8 37.3-18.6c22.2-18.7 54.3-20.1 78.1-3.4c18 12.4 40.1 20.3 59.2 20.3c21.1 0 42-8.5 59.2-20.3c22.1-15.5 51.6-15.5 73.7 0c18.4 12.7 39.6 20.3 59.2 20.3c19 0 41.2-7.9 59.2-20.3c23.8-16.7 55.8-15.3 78.1 3.4c10.6 8.8 24.2 15.6 37.3 18.6c4.2 1 8.2 2.4 12 4.1c3.3-6.6 5.3-14.2 5.3-22.2v-96c0-26.5-21.5-48-48-48h-48V109.3l25.4 25.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-80-80c-12.5-12.5-32.8-12.5-45.3 0l-80 80c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l25.3-25.4V256H288V48c0-26.5-21.5-48-48-48zm194.5 421.9c-11.1-7.9-25.9-7.9-37 0c-22.5 15.5-50 26.1-77.5 26.1c-26.9 0-55.3-10.8-77.4-26.1c-11.9-8.5-28.1-7.8-39.2 1.7c-14.4 11.9-32.5 21-50.6 25.2c-17.2 4-27.9 21.2-23.9 38.4s21.2 27.9 38.4 23.9c24.5-5.7 44.9-16.5 58.2-25c29 15.6 61.5 25.9 94.5 25.9c31.9 0 60.6-9.9 80.4-18.9c5.8-2.7 11.1-5.3 15.6-7.7c4.5 2.4 9.7 5.1 15.6 7.7c19.8 9 48.5 18.9 80.4 18.9c33 0 65.5-10.3 94.5-25.8c13.4 8.4 33.7 19.3 58.2 25c17.2 4 34.4-6.7 38.4-23.9s-6.7-34.4-23.9-38.4c-18.1-4.2-36.2-13.3-50.6-25.2c-11.1-9.4-27.3-10.1-39.2-1.7c-22 15.2-50.5 26-77.4 26c-27.5 0-55-10.6-77.5-26.1" />
+                    </svg>
+                    Bomba&nbsp;de&nbsp;calor
+                  </a>
+
+                  <a class="dimensione--item" href="javascript:void(0)"
+                    onclick="TipoPiscina('AQUECIMENTO_SOLAR,BOMBA_DE_CALOR')">
+                    <div class="d-flex flex-column gap-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <path fill="#888888"
+                          d="M11 3V2q0-.425.288-.712T12 1t.713.288T13 2v1q0 .425-.288.713T12 4t-.712-.288T11 3m0 19v-1q0-.425.288-.712T12 20t.713.288T13 21v1q0 .425-.288.713T12 23t-.712-.288T11 22m11-9h-1q-.425 0-.712-.288T20 12t.288-.712T21 11h1q.425 0 .713.288T23 12t-.288.713T22 13M3 13H2q-.425 0-.712-.288T1 12t.288-.712T2 11h1q.425 0 .713.288T4 12t-.288.713T3 13m16.75-7.325l-.35.35q-.275.275-.687.275T18 6q-.275-.275-.288-.687t.263-.713l.375-.375q.275-.3.7-.3t.725.3t.288.725t-.313.725M6.025 19.4l-.375.375q-.275.3-.7.3t-.725-.3t-.288-.725t.313-.725l.35-.35q.275-.275.688-.275T6 18q.275.275.288.688t-.263.712m12.3.35l-.35-.35q-.275-.275-.275-.687T18 18q.275-.275.688-.287t.712.262l.375.375q.3.275.3.7t-.3.725t-.725.288t-.725-.313M4.6 6.025l-.375-.375q-.3-.275-.3-.7t.3-.725t.725-.288t.725.313l.35.35q.275.275.275.688T6 6q-.275.275-.687.288T4.6 6.025M12 18q-2.5 0-4.25-1.75T6 12t1.75-4.25T12 6t4.25 1.75T18 12t-1.75 4.25T12 18" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 576 512">
+                        <path fill="#888888"
+                          d="M112 0C85.5 0 64 21.5 64 48v208H48c-26.5 0-48 21.5-48 48v96c0 8 2 15.6 5.4 22.2c3.8-1.7 7.8-3.1 12-4.1c13.1-3.1 26.7-9.8 37.3-18.6c22.2-18.7 54.3-20.1 78.1-3.4c18 12.4 40.1 20.3 59.2 20.3c21.1 0 42-8.5 59.2-20.3c22.1-15.5 51.6-15.5 73.7 0c18.4 12.7 39.6 20.3 59.2 20.3c19 0 41.2-7.9 59.2-20.3c23.8-16.7 55.8-15.3 78.1 3.4c10.6 8.8 24.2 15.6 37.3 18.6c4.2 1 8.2 2.4 12 4.1c3.3-6.6 5.3-14.2 5.3-22.2v-96c0-26.5-21.5-48-48-48h-48V109.3l25.4 25.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-80-80c-12.5-12.5-32.8-12.5-45.3 0l-80 80c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l25.3-25.4V256H288V48c0-26.5-21.5-48-48-48zm194.5 421.9c-11.1-7.9-25.9-7.9-37 0c-22.5 15.5-50 26.1-77.5 26.1c-26.9 0-55.3-10.8-77.4-26.1c-11.9-8.5-28.1-7.8-39.2 1.7c-14.4 11.9-32.5 21-50.6 25.2c-17.2 4-27.9 21.2-23.9 38.4s21.2 27.9 38.4 23.9c24.5-5.7 44.9-16.5 58.2-25c29 15.6 61.5 25.9 94.5 25.9c31.9 0 60.6-9.9 80.4-18.9c5.8-2.7 11.1-5.3 15.6-7.7c4.5 2.4 9.7 5.1 15.6 7.7c19.8 9 48.5 18.9 80.4 18.9c33 0 65.5-10.3 94.5-25.8c13.4 8.4 33.7 19.3 58.2 25c17.2 4 34.4-6.7 38.4-23.9s-6.7-34.4-23.9-38.4c-18.1-4.2-36.2-13.3-50.6-25.2c-11.1-9.4-27.3-10.1-39.2-1.7c-22 15.2-50.5 26-77.4 26c-27.5 0-55-10.6-77.5-26.1" />
+                      </svg>
+                    </div>
+                    Não&nbsp;tenho&nbsp;certeza,&nbsp; dimensionar&nbsp;os&nbsp;dois
+                  </a>
+                </div>
+
+                <div class="form-group">
+                  <a class="btn btn-back" id="btnVoltarAquecimento" style="bottom:50px;" href="javascript:void(0)">
+                    Voltar
+                  </a>
+                </div>
+              </div>
+
+
+              <div id="n3" class="hide">
+                <h1 class="section-title">
+                  <strong>Quantas&nbsp;duchas</strong> terão água&nbsp;quente?
+                </h1>
+
+                <div class="box-dimensione-xs">
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel4('1')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                      <path fill="none" stroke="#888888"
+                        d="m13.228 4.772l3.03-3.03a4.242 4.242 0 0 1 7.242 3V24M5.803 7.954L4.39 9.368m-.353 2.475L2.62 13.257m-.707-3.535L.5 11.136m5.657 2.829l-1.414 1.414m3.535.707L6.864 17.5m3.182-5.303L8.632 13.61m-.707-3.536L6.51 11.49m4.243-9.193l-.155.155a6 6 0 0 1-3.89 1.747l-.728.043l-.177.177l7.779 7.778l.176-.177l.043-.728a6 6 0 0 1 1.747-3.89l.155-.155z" />
+                    </svg><br>
+                    x01
+                  </a>
+
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel4('2')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                      <path fill="none" stroke="#888888"
+                        d="m13.228 4.772l3.03-3.03a4.242 4.242 0 0 1 7.242 3V24M5.803 7.954L4.39 9.368m-.353 2.475L2.62 13.257m-.707-3.535L.5 11.136m5.657 2.829l-1.414 1.414m3.535.707L6.864 17.5m3.182-5.303L8.632 13.61m-.707-3.536L6.51 11.49m4.243-9.193l-.155.155a6 6 0 0 1-3.89 1.747l-.728.043l-.177.177l7.779 7.778l.176-.177l.043-.728a6 6 0 0 1 1.747-3.89l.155-.155z" />
+                    </svg><br>
+                    x02
+                  </a>
+
+                  <a class="dimensione--item dimensione--item-ducha " href="javascript:void(0)" onclick="nivel4('3')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                      <path fill="none" stroke="#888888"
+                        d="m13.228 4.772l3.03-3.03a4.242 4.242 0 0 1 7.242 3V24M5.803 7.954L4.39 9.368m-.353 2.475L2.62 13.257m-.707-3.535L.5 11.136m5.657 2.829l-1.414 1.414m3.535.707L6.864 17.5m3.182-5.303L8.632 13.61m-.707-3.536L6.51 11.49m4.243-9.193l-.155.155a6 6 0 0 1-3.89 1.747l-.728.043l-.177.177l7.779 7.778l.176-.177l.043-.728a6 6 0 0 1 1.747-3.89l.155-.155z" />
+                    </svg><br>
+                    x03
+                  </a>
+
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel4('4')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                      <path fill="none" stroke="#888888"
+                        d="m13.228 4.772l3.03-3.03a4.242 4.242 0 0 1 7.242 3V24M5.803 7.954L4.39 9.368m-.353 2.475L2.62 13.257m-.707-3.535L.5 11.136m5.657 2.829l-1.414 1.414m3.535.707L6.864 17.5m3.182-5.303L8.632 13.61m-.707-3.536L6.51 11.49m4.243-9.193l-.155.155a6 6 0 0 1-3.89 1.747l-.728.043l-.177.177l7.779 7.778l.176-.177l.043-.728a6 6 0 0 1 1.747-3.89l.155-.155z" />
+                    </svg><br>
+                    x04
+                  </a>
+
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel4('5')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                      <path fill="none" stroke="#888888"
+                        d="m13.228 4.772l3.03-3.03a4.242 4.242 0 0 1 7.242 3V24M5.803 7.954L4.39 9.368m-.353 2.475L2.62 13.257m-.707-3.535L.5 11.136m5.657 2.829l-1.414 1.414m3.535.707L6.864 17.5m3.182-5.303L8.632 13.61m-.707-3.536L6.51 11.49m4.243-9.193l-.155.155a6 6 0 0 1-3.89 1.747l-.728.043l-.177.177l7.779 7.778l.176-.177l.043-.728a6 6 0 0 1 1.747-3.89l.155-.155z" />
+                    </svg><br>
+                    x05
+                  </a>
+
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel4('6')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                      <path fill="none" stroke="#888888"
+                        d="m13.228 4.772l3.03-3.03a4.242 4.242 0 0 1 7.242 3V24M5.803 7.954L4.39 9.368m-.353 2.475L2.62 13.257m-.707-3.535L.5 11.136m5.657 2.829l-1.414 1.414m3.535.707L6.864 17.5m3.182-5.303L8.632 13.61m-.707-3.536L6.51 11.49m4.243-9.193l-.155.155a6 6 0 0 1-3.89 1.747l-.728.043l-.177.177l7.779 7.778l.176-.177l.043-.728a6 6 0 0 1 1.747-3.89l.155-.155z" />
+                    </svg><br>
+                    x06
+                  </a>
+
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel4('7')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                      <path fill="none" stroke="#888888"
+                        d="m13.228 4.772l3.03-3.03a4.242 4.242 0 0 1 7.242 3V24M5.803 7.954L4.39 9.368m-.353 2.475L2.62 13.257m-.707-3.535L.5 11.136m5.657 2.829l-1.414 1.414m3.535.707L6.864 17.5m3.182-5.303L8.632 13.61m-.707-3.536L6.51 11.49m4.243-9.193l-.155.155a6 6 0 0 1-3.89 1.747l-.728.043l-.177.177l7.779 7.778l.176-.177l.043-.728a6 6 0 0 1 1.747-3.89l.155-.155z" />
+                    </svg><br>
+                    x07
+                  </a>
+
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel4('8')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                      <path fill="none" stroke="#888888"
+                        d="m13.228 4.772l3.03-3.03a4.242 4.242 0 0 1 7.242 3V24M5.803 7.954L4.39 9.368m-.353 2.475L2.62 13.257m-.707-3.535L.5 11.136m5.657 2.829l-1.414 1.414m3.535.707L6.864 17.5m3.182-5.303L8.632 13.61m-.707-3.536L6.51 11.49m4.243-9.193l-.155.155a6 6 0 0 1-3.89 1.747l-.728.043l-.177.177l7.779 7.778l.176-.177l.043-.728a6 6 0 0 1 1.747-3.89l.155-.155z" />
+                    </svg><br>
+                    x08
+                  </a>
+
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel4('9')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                      <path fill="none" stroke="#888888"
+                        d="m13.228 4.772l3.03-3.03a4.242 4.242 0 0 1 7.242 3V24M5.803 7.954L4.39 9.368m-.353 2.475L2.62 13.257m-.707-3.535L.5 11.136m5.657 2.829l-1.414 1.414m3.535.707L6.864 17.5m3.182-5.303L8.632 13.61m-.707-3.536L6.51 11.49m4.243-9.193l-.155.155a6 6 0 0 1-3.89 1.747l-.728.043l-.177.177l7.779 7.778l.176-.177l.043-.728a6 6 0 0 1 1.747-3.89l.155-.155z" />
+                    </svg><br>
+                    x09
+                  </a>
+                </div>
+
+                <div class="form-group">
+                  <a class="btn btn-back" href="javascript:void(0)" style="bottom:50px;"
+                    onclick="btnVoltar('n5', 'n3', 50);">
+                    Voltar
+                  </a>
+                </div>
+              </div>
+
+
+              <div id="n4" class="hide">
+                <h1 class="section-title">
+                  <strong>Quantas torneiras</strong> terão água quente?
+                </h1>
+
+                <div class="box-dimensione-xs">
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel7('0')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 14 14">
+                      <path fill="#888888" fill-rule="evenodd"
+                        d="m7 .5l.4-.3a.5.5 0 0 0-.8 0zm4.717 10.157A4.997 4.997 0 0 0 12 9c0-.74-.324-1.668-.75-2.588c-.433-.94-1.007-1.944-1.575-2.86A51.756 51.756 0 0 0 7.453.273L7.414.218l-.01-.014l-.003-.003V.2L7 .5L6.6.2l-.001.002l-.003.003l-.01.014l-.039.052l-.145.198a52.374 52.374 0 0 0-1.966 2.906L1.28.22A.75.75 0 1 0 .22 1.28l12.5 12.5a.75.75 0 1 0 1.06-1.06zm-8.69-4.82l7.08 7.08A5 5 0 0 1 2 9c0-.74.324-1.668.75-2.588c.087-.19.18-.382.277-.575"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <br>
+                    Nenhum
+                  </a>
+
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel7('1')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 512 512">
+                      <path fill="#888888"
+                        d="M224 0c17.7 0 32 14.3 32 32v12l96-12c17.7 0 32 14.3 32 32s-14.3 32-32 32l-96-12l-31-3.9l-1-.1l-1 .1l-31 3.9l-96 12c-17.7 0-32-14.3-32-32s14.3-32 32-32l96 12V32c0-17.7 14.3-32 32-32M0 224c0-17.7 14.3-32 32-32h96l22.6-22.6c6-6 14.1-9.4 22.6-9.4H192v-43.8l32-4l32 4V160h18.7c8.5 0 16.6 3.4 22.6 9.4L320 192h32c88.4 0 160 71.6 160 160c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32s-14.3-32-32-32h-36.1c-20.2 29-53.9 48-91.9 48s-71.7-19-91.9-48H32c-17.7 0-32-14.3-32-32zm436.8 199.4c1.9-4.5 6.3-7.4 11.2-7.4s9.2 2.9 11.2 7.4l18.2 42.4c1.8 4.1 2.7 8.6 2.7 13.1v1.1c0 17.7-14.3 32-32 32s-32-14.3-32-32v-1.2c0-4.5.9-8.9 2.7-13.1l18.2-42.4z" />
+                    </svg>
+                    x01
+                  </a>
+
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel7('2')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 512 512">
+                      <path fill="#888888"
+                        d="M224 0c17.7 0 32 14.3 32 32v12l96-12c17.7 0 32 14.3 32 32s-14.3 32-32 32l-96-12l-31-3.9l-1-.1l-1 .1l-31 3.9l-96 12c-17.7 0-32-14.3-32-32s14.3-32 32-32l96 12V32c0-17.7 14.3-32 32-32M0 224c0-17.7 14.3-32 32-32h96l22.6-22.6c6-6 14.1-9.4 22.6-9.4H192v-43.8l32-4l32 4V160h18.7c8.5 0 16.6 3.4 22.6 9.4L320 192h32c88.4 0 160 71.6 160 160c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32s-14.3-32-32-32h-36.1c-20.2 29-53.9 48-91.9 48s-71.7-19-91.9-48H32c-17.7 0-32-14.3-32-32zm436.8 199.4c1.9-4.5 6.3-7.4 11.2-7.4s9.2 2.9 11.2 7.4l18.2 42.4c1.8 4.1 2.7 8.6 2.7 13.1v1.1c0 17.7-14.3 32-32 32s-32-14.3-32-32v-1.2c0-4.5.9-8.9 2.7-13.1l18.2-42.4z" />
+                    </svg>
+                    x02
+                  </a>
+
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel7('3')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 512 512">
+                      <path fill="#888888"
+                        d="M224 0c17.7 0 32 14.3 32 32v12l96-12c17.7 0 32 14.3 32 32s-14.3 32-32 32l-96-12l-31-3.9l-1-.1l-1 .1l-31 3.9l-96 12c-17.7 0-32-14.3-32-32s14.3-32 32-32l96 12V32c0-17.7 14.3-32 32-32M0 224c0-17.7 14.3-32 32-32h96l22.6-22.6c6-6 14.1-9.4 22.6-9.4H192v-43.8l32-4l32 4V160h18.7c8.5 0 16.6 3.4 22.6 9.4L320 192h32c88.4 0 160 71.6 160 160c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32s-14.3-32-32-32h-36.1c-20.2 29-53.9 48-91.9 48s-71.7-19-91.9-48H32c-17.7 0-32-14.3-32-32zm436.8 199.4c1.9-4.5 6.3-7.4 11.2-7.4s9.2 2.9 11.2 7.4l18.2 42.4c1.8 4.1 2.7 8.6 2.7 13.1v1.1c0 17.7-14.3 32-32 32s-32-14.3-32-32v-1.2c0-4.5.9-8.9 2.7-13.1l18.2-42.4z" />
+                    </svg>
+                    x03
+                  </a>
+
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel7('4')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 512 512">
+                      <path fill="#888888"
+                        d="M224 0c17.7 0 32 14.3 32 32v12l96-12c17.7 0 32 14.3 32 32s-14.3 32-32 32l-96-12l-31-3.9l-1-.1l-1 .1l-31 3.9l-96 12c-17.7 0-32-14.3-32-32s14.3-32 32-32l96 12V32c0-17.7 14.3-32 32-32M0 224c0-17.7 14.3-32 32-32h96l22.6-22.6c6-6 14.1-9.4 22.6-9.4H192v-43.8l32-4l32 4V160h18.7c8.5 0 16.6 3.4 22.6 9.4L320 192h32c88.4 0 160 71.6 160 160c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32s-14.3-32-32-32h-36.1c-20.2 29-53.9 48-91.9 48s-71.7-19-91.9-48H32c-17.7 0-32-14.3-32-32zm436.8 199.4c1.9-4.5 6.3-7.4 11.2-7.4s9.2 2.9 11.2 7.4l18.2 42.4c1.8 4.1 2.7 8.6 2.7 13.1v1.1c0 17.7-14.3 32-32 32s-32-14.3-32-32v-1.2c0-4.5.9-8.9 2.7-13.1l18.2-42.4z" />
+                    </svg>
+                    x04
+                  </a>
+
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel7('5')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 512 512">
+                      <path fill="#888888"
+                        d="M224 0c17.7 0 32 14.3 32 32v12l96-12c17.7 0 32 14.3 32 32s-14.3 32-32 32l-96-12l-31-3.9l-1-.1l-1 .1l-31 3.9l-96 12c-17.7 0-32-14.3-32-32s14.3-32 32-32l96 12V32c0-17.7 14.3-32 32-32M0 224c0-17.7 14.3-32 32-32h96l22.6-22.6c6-6 14.1-9.4 22.6-9.4H192v-43.8l32-4l32 4V160h18.7c8.5 0 16.6 3.4 22.6 9.4L320 192h32c88.4 0 160 71.6 160 160c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32s-14.3-32-32-32h-36.1c-20.2 29-53.9 48-91.9 48s-71.7-19-91.9-48H32c-17.7 0-32-14.3-32-32zm436.8 199.4c1.9-4.5 6.3-7.4 11.2-7.4s9.2 2.9 11.2 7.4l18.2 42.4c1.8 4.1 2.7 8.6 2.7 13.1v1.1c0 17.7-14.3 32-32 32s-32-14.3-32-32v-1.2c0-4.5.9-8.9 2.7-13.1l18.2-42.4z" />
+                    </svg>
+                    x05
+                  </a>
+
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel7('6')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 512 512">
+                      <path fill="#888888"
+                        d="M224 0c17.7 0 32 14.3 32 32v12l96-12c17.7 0 32 14.3 32 32s-14.3 32-32 32l-96-12l-31-3.9l-1-.1l-1 .1l-31 3.9l-96 12c-17.7 0-32-14.3-32-32s14.3-32 32-32l96 12V32c0-17.7 14.3-32 32-32M0 224c0-17.7 14.3-32 32-32h96l22.6-22.6c6-6 14.1-9.4 22.6-9.4H192v-43.8l32-4l32 4V160h18.7c8.5 0 16.6 3.4 22.6 9.4L320 192h32c88.4 0 160 71.6 160 160c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32s-14.3-32-32-32h-36.1c-20.2 29-53.9 48-91.9 48s-71.7-19-91.9-48H32c-17.7 0-32-14.3-32-32zm436.8 199.4c1.9-4.5 6.3-7.4 11.2-7.4s9.2 2.9 11.2 7.4l18.2 42.4c1.8 4.1 2.7 8.6 2.7 13.1v1.1c0 17.7-14.3 32-32 32s-32-14.3-32-32v-1.2c0-4.5.9-8.9 2.7-13.1l18.2-42.4z" />
+                    </svg>
+                    x06
+                  </a>
+
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel7('7')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 512 512">
+                      <path fill="#888888"
+                        d="M224 0c17.7 0 32 14.3 32 32v12l96-12c17.7 0 32 14.3 32 32s-14.3 32-32 32l-96-12l-31-3.9l-1-.1l-1 .1l-31 3.9l-96 12c-17.7 0-32-14.3-32-32s14.3-32 32-32l96 12V32c0-17.7 14.3-32 32-32M0 224c0-17.7 14.3-32 32-32h96l22.6-22.6c6-6 14.1-9.4 22.6-9.4H192v-43.8l32-4l32 4V160h18.7c8.5 0 16.6 3.4 22.6 9.4L320 192h32c88.4 0 160 71.6 160 160c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32s-14.3-32-32-32h-36.1c-20.2 29-53.9 48-91.9 48s-71.7-19-91.9-48H32c-17.7 0-32-14.3-32-32zm436.8 199.4c1.9-4.5 6.3-7.4 11.2-7.4s9.2 2.9 11.2 7.4l18.2 42.4c1.8 4.1 2.7 8.6 2.7 13.1v1.1c0 17.7-14.3 32-32 32s-32-14.3-32-32v-1.2c0-4.5.9-8.9 2.7-13.1l18.2-42.4z" />
+                    </svg>
+                    x07
+                  </a>
+
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel7('8')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 512 512">
+                      <path fill="#888888"
+                        d="M224 0c17.7 0 32 14.3 32 32v12l96-12c17.7 0 32 14.3 32 32s-14.3 32-32 32l-96-12l-31-3.9l-1-.1l-1 .1l-31 3.9l-96 12c-17.7 0-32-14.3-32-32s14.3-32 32-32l96 12V32c0-17.7 14.3-32 32-32M0 224c0-17.7 14.3-32 32-32h96l22.6-22.6c6-6 14.1-9.4 22.6-9.4H192v-43.8l32-4l32 4V160h18.7c8.5 0 16.6 3.4 22.6 9.4L320 192h32c88.4 0 160 71.6 160 160c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32s-14.3-32-32-32h-36.1c-20.2 29-53.9 48-91.9 48s-71.7-19-91.9-48H32c-17.7 0-32-14.3-32-32zm436.8 199.4c1.9-4.5 6.3-7.4 11.2-7.4s9.2 2.9 11.2 7.4l18.2 42.4c1.8 4.1 2.7 8.6 2.7 13.1v1.1c0 17.7-14.3 32-32 32s-32-14.3-32-32v-1.2c0-4.5.9-8.9 2.7-13.1l18.2-42.4z" />
+                    </svg>
+                    x08
+                  </a>
+
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel7('9')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 512 512">
+                      <path fill="#888888"
+                        d="M224 0c17.7 0 32 14.3 32 32v12l96-12c17.7 0 32 14.3 32 32s-14.3 32-32 32l-96-12l-31-3.9l-1-.1l-1 .1l-31 3.9l-96 12c-17.7 0-32-14.3-32-32s14.3-32 32-32l96 12V32c0-17.7 14.3-32 32-32M0 224c0-17.7 14.3-32 32-32h96l22.6-22.6c6-6 14.1-9.4 22.6-9.4H192v-43.8l32-4l32 4V160h18.7c8.5 0 16.6 3.4 22.6 9.4L320 192h32c88.4 0 160 71.6 160 160c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32s-14.3-32-32-32h-36.1c-20.2 29-53.9 48-91.9 48s-71.7-19-91.9-48H32c-17.7 0-32-14.3-32-32zm436.8 199.4c1.9-4.5 6.3-7.4 11.2-7.4s9.2 2.9 11.2 7.4l18.2 42.4c1.8 4.1 2.7 8.6 2.7 13.1v1.1c0 17.7-14.3 32-32 32s-32-14.3-32-32v-1.2c0-4.5.9-8.9 2.7-13.1l18.2-42.4z" />
+                    </svg>
+                    x09
+                  </a>
+
+                </div>
+
+                <div class="form-group">
+                  <a class="btn btn-back" href="javascript:void(0)" style="bottom:50px;"
+                    onclick="btnVoltar('n3', 'n4', 70);">
+                    Voltar
+                  </a>
+                </div>
+              </div>
+
+
+              <div id="n5" class=" hide">
+                <h1 class="section-title">
+                  <strong>Quantas pessoas</strong> moram na residência?
+                </h1>
+                <div class="box-dimensione-xs">
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel5('1')">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 21 21">
+                      <g fill="none" fill-rule="evenodd" stroke="#888888" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                          d="M8.5 2.5a3 3 0 0 1 3 3v2a3 3 0 1 1-6 0v-2a3 3 0 0 1 3-3m7 14v-.728c0-3.187-3.686-5.272-7-5.272s-7 2.085-7 5.272v.728a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1" />
+                        <path fill="#888888"
+                          d="M12.52 2.678A3.001 3.001 0 0 1 14.5 5.5v1c0 1.297-.848 2.581-2 3c.674-.919 1.01-2.086 1.01-3.5s-.331-2.523-.99-3.322M17.5 17.5h1a1 1 0 0 0 1-1v-.728c0-2.17-1.71-3.83-3.847-4.667c0 0 2.847 2.395 1.847 6.395" />
+                      </g>
+                    </svg>
+                    x01
+                  </a>
+
+                  <a class="dimensione--item  dimensione--item-ducha" href="javascript:void(0)" onclick="nivel5('2')">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 21 21">
+                      <g fill="none" fill-rule="evenodd" stroke="#888888" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                          d="M8.5 2.5a3 3 0 0 1 3 3v2a3 3 0 1 1-6 0v-2a3 3 0 0 1 3-3m7 14v-.728c0-3.187-3.686-5.272-7-5.272s-7 2.085-7 5.272v.728a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1" />
+                        <path fill="#888888"
+                          d="M12.52 2.678A3.001 3.001 0 0 1 14.5 5.5v1c0 1.297-.848 2.581-2 3c.674-.919 1.01-2.086 1.01-3.5s-.331-2.523-.99-3.322M17.5 17.5h1a1 1 0 0 0 1-1v-.728c0-2.17-1.71-3.83-3.847-4.667c0 0 2.847 2.395 1.847 6.395" />
+                      </g>
+                    </svg>
+                    x02
+                  </a>
+
+                  <a class="dimensione--item  dimensione--item-ducha" href="javascript:void(0)" onclick="nivel5('3')">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 21 21">
+                      <g fill="none" fill-rule="evenodd" stroke="#888888" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                          d="M8.5 2.5a3 3 0 0 1 3 3v2a3 3 0 1 1-6 0v-2a3 3 0 0 1 3-3m7 14v-.728c0-3.187-3.686-5.272-7-5.272s-7 2.085-7 5.272v.728a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1" />
+                        <path fill="#888888"
+                          d="M12.52 2.678A3.001 3.001 0 0 1 14.5 5.5v1c0 1.297-.848 2.581-2 3c.674-.919 1.01-2.086 1.01-3.5s-.331-2.523-.99-3.322M17.5 17.5h1a1 1 0 0 0 1-1v-.728c0-2.17-1.71-3.83-3.847-4.667c0 0 2.847 2.395 1.847 6.395" />
+                      </g>
+                    </svg>
+                    x03
+                  </a>
+
+                  <a class="dimensione--item  dimensione--item-ducha" href="javascript:void(0)" onclick="nivel5('4')">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 21 21">
+                      <g fill="none" fill-rule="evenodd" stroke="#888888" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                          d="M8.5 2.5a3 3 0 0 1 3 3v2a3 3 0 1 1-6 0v-2a3 3 0 0 1 3-3m7 14v-.728c0-3.187-3.686-5.272-7-5.272s-7 2.085-7 5.272v.728a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1" />
+                        <path fill="#888888"
+                          d="M12.52 2.678A3.001 3.001 0 0 1 14.5 5.5v1c0 1.297-.848 2.581-2 3c.674-.919 1.01-2.086 1.01-3.5s-.331-2.523-.99-3.322M17.5 17.5h1a1 1 0 0 0 1-1v-.728c0-2.17-1.71-3.83-3.847-4.667c0 0 2.847 2.395 1.847 6.395" />
+                      </g>
+                    </svg>
+                    x04
+                  </a>
+
+                  <a class="dimensione--item  dimensione--item-ducha" href="javascript:void(0)" onclick="nivel5('5')">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 21 21">
+                      <g fill="none" fill-rule="evenodd" stroke="#888888" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                          d="M8.5 2.5a3 3 0 0 1 3 3v2a3 3 0 1 1-6 0v-2a3 3 0 0 1 3-3m7 14v-.728c0-3.187-3.686-5.272-7-5.272s-7 2.085-7 5.272v.728a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1" />
+                        <path fill="#888888"
+                          d="M12.52 2.678A3.001 3.001 0 0 1 14.5 5.5v1c0 1.297-.848 2.581-2 3c.674-.919 1.01-2.086 1.01-3.5s-.331-2.523-.99-3.322M17.5 17.5h1a1 1 0 0 0 1-1v-.728c0-2.17-1.71-3.83-3.847-4.667c0 0 2.847 2.395 1.847 6.395" />
+                      </g>
+                    </svg>
+                    x05
+                  </a>
+
+                  <a class="dimensione--item  dimensione--item-ducha" href="javascript:void(0)" onclick="nivel5('6')">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 21 21">
+                      <g fill="none" fill-rule="evenodd" stroke="#888888" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                          d="M8.5 2.5a3 3 0 0 1 3 3v2a3 3 0 1 1-6 0v-2a3 3 0 0 1 3-3m7 14v-.728c0-3.187-3.686-5.272-7-5.272s-7 2.085-7 5.272v.728a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1" />
+                        <path fill="#888888"
+                          d="M12.52 2.678A3.001 3.001 0 0 1 14.5 5.5v1c0 1.297-.848 2.581-2 3c.674-.919 1.01-2.086 1.01-3.5s-.331-2.523-.99-3.322M17.5 17.5h1a1 1 0 0 0 1-1v-.728c0-2.17-1.71-3.83-3.847-4.667c0 0 2.847 2.395 1.847 6.395" />
+                      </g>
+                    </svg>
+                    x06
+                  </a>
+
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel5('7')">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 21 21">
+                      <g fill="none" fill-rule="evenodd" stroke="#888888" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                          d="M8.5 2.5a3 3 0 0 1 3 3v2a3 3 0 1 1-6 0v-2a3 3 0 0 1 3-3m7 14v-.728c0-3.187-3.686-5.272-7-5.272s-7 2.085-7 5.272v.728a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1" />
+                        <path fill="#888888"
+                          d="M12.52 2.678A3.001 3.001 0 0 1 14.5 5.5v1c0 1.297-.848 2.581-2 3c.674-.919 1.01-2.086 1.01-3.5s-.331-2.523-.99-3.322M17.5 17.5h1a1 1 0 0 0 1-1v-.728c0-2.17-1.71-3.83-3.847-4.667c0 0 2.847 2.395 1.847 6.395" />
+                      </g>
+                    </svg>
+                    x07
+                  </a>
+
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel5('8')">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 21 21">
+                      <g fill="none" fill-rule="evenodd" stroke="#888888" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                          d="M8.5 2.5a3 3 0 0 1 3 3v2a3 3 0 1 1-6 0v-2a3 3 0 0 1 3-3m7 14v-.728c0-3.187-3.686-5.272-7-5.272s-7 2.085-7 5.272v.728a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1" />
+                        <path fill="#888888"
+                          d="M12.52 2.678A3.001 3.001 0 0 1 14.5 5.5v1c0 1.297-.848 2.581-2 3c.674-.919 1.01-2.086 1.01-3.5s-.331-2.523-.99-3.322M17.5 17.5h1a1 1 0 0 0 1-1v-.728c0-2.17-1.71-3.83-3.847-4.667c0 0 2.847 2.395 1.847 6.395" />
+                      </g>
+                    </svg>
+                    x08
+                  </a>
+
+                  <a class="dimensione--item dimensione--item-ducha" href="javascript:void(0)" onclick="nivel5('9')">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 21 21">
+                      <g fill="none" fill-rule="evenodd" stroke="#888888" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                          d="M8.5 2.5a3 3 0 0 1 3 3v2a3 3 0 1 1-6 0v-2a3 3 0 0 1 3-3m7 14v-.728c0-3.187-3.686-5.272-7-5.272s-7 2.085-7 5.272v.728a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1" />
+                        <path fill="#888888"
+                          d="M12.52 2.678A3.001 3.001 0 0 1 14.5 5.5v1c0 1.297-.848 2.581-2 3c.674-.919 1.01-2.086 1.01-3.5s-.331-2.523-.99-3.322M17.5 17.5h1a1 1 0 0 0 1-1v-.728c0-2.17-1.71-3.83-3.847-4.667c0 0 2.847 2.395 1.847 6.395" />
+                      </g>
+                    </svg>
+                    x09
+                  </a>
+                </div>
+
+                <div class="form-group">
+                  <a class="btn btn-back" href="javascript:void(0)" style="bottom:50px;"
+                    onclick="btnVoltar('n6', 'n5', 35);">
+                    Voltar
+                  </a>
+                </div>
+              </div>
+
+
+              <div id="n6" class="hide">
+
+                <h1 class="section-title">
+                  <strong>Qual&nbsp;o&nbsp;tipo&nbsp;de&nbsp;</strong> aquecimento?
+                  <br><span style="color:#000; font-size:14px">(Você pode selecionar mais de uma opção)</span>
+                </h1>
+
+                <div class="box-dimensione n1">
+                  <div class="mensagemTipoAqueJQ col-xs-24 col-sm-24"
+                    style="color:red; margin: 10px; color: red; text-align: center; display:none;">Por favor selecionar
+                    um
+                    tipo de aquecimento</div>
+                  <input type="hidden" name="AquecimentoSolar" value="">
+                  <a class="dimensione--item aquecimentoSolarJQ" href="javascript:void(0)"
+                    onclick="setarAquecimentoSolar('SOLAR')">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                      <g fill="none">
+                        <path
+                          d="M24 0v24H0V0zM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z" />
+                        <path fill="#888888"
+                          d="M12.41 3.654a4.304 4.304 0 0 1 5.571-.661l.18.64l.323.242a3.79 3.79 0 0 1 1.51 2.81l.006.222V21a1 1 0 0 1-1.993.117L18 21V6.395a1.79 1.79 0 0 0-.586-1.325l-.13-.107l-.323-.242a2.304 2.304 0 0 0-2.584-.122l-.153.102l.758.438a4 4 0 0 1 1.566 5.277l-.102.187l-.5.866a1 1 0 0 1-1.261.419l-.105-.053l-8.66-5a1 1 0 0 1-.419-1.262l.053-.104l.5-.866a4 4 0 0 1 5.277-1.565l.187.1zM6.75 15.397a1 1 0 0 1 .366 1.366l-.5.866a1 1 0 0 1-1.732-1l.5-.866a1 1 0 0 1 1.366-.366m2.232.134a1 1 0 0 1 1.785.896l-.053.104l-.5.866a1 1 0 0 1-1.784-.895l.052-.105zm-3.83-3.366a1 1 0 0 1 .366 1.366l-.5.866a1 1 0 1 1-1.732-1l.5-.866a1 1 0 0 1 1.366-.366m3.598-.232a1 1 0 0 1 .366 1.366l-.5.866a1 1 0 0 1-1.732-1l.5-.866a1 1 0 0 1 1.366-.366m2.232.134a1 1 0 0 1 1.785.896l-.053.104l-.5.866a1 1 0 0 1-1.784-.896l.052-.104zm-3.83-3.366a1 1 0 0 1 .366 1.366l-.5.866a1 1 0 1 1-1.732-1l.5-.866a1 1 0 0 1 1.366-.366" />
+                      </g>
+                    </svg>
+
+                    Aquecimento solar para banho
+                  </a>
+
+                  <input type="hidden" name="AquecimentoGas" value="">
+
+
+                  <input type="hidden" name="AquecimentoPiscina" value="">
+                  <a class="dimensione--item aquecimentoPiscinaJQ" href="javascript:void(0)"
+                    onclick="setarAquecimentoPiscina('PISCINA')">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 14 14">
+                      <path fill="none" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"
+                        d="M13.5 13.5H13a2 2 0 0 1-2-2a2 2 0 0 1-4 0a2 2 0 0 1-4 0a2 2 0 0 1-2 2H.5m2-11a2 2 0 0 1 4 0v7m3-9a2 2 0 0 1 2 2v7m-5-5h5m-5 3h5" />
+                    </svg>
+
+
+                    Aquecimento para piscina
+                  </a>
+                </div>
+                <div class="row">
+                  <div class="form-group col-sm-12 col-md-6">
+                    <p class="row" style="margin-right: 0px;">
+                      <button class="btn btn-back btn-back__forward"
+                        style="background:#008ECF;max-width: 150px; float:right; bottom: 50px; right: 0;"
+                        onclick="nivel10('SOLAR')" href="#">Avançar</button>
+                    </p>
+                  </div>
+                  <div class="form-group col-sm-12 col-md-6">
+                    <a class="btn btn-back btn-back__back" href="javascript:void(0)" style="left: 0px; bottom:50px;"
+                      onclick="btnVoltar('n1','n6',10)">
+                      Voltar
+                    </a>
                   </div>
                 </div>
 
+              </div>
 
-                <div class="mt-2 ">
-                  <h1>2- QUAL O TIPO DE LOCAL? </h1>
-                  <div class="mb-3">
-                    <select id="localpiscina" class="form-select" aria-label="Escolha o tipo">
-                      <option value="1">Residência</option>
-                      <option value="2">Clube</option>
-                      <option value="3">Outro</option>
+
+              <div id="piscina" class="hide">
+                <h1 class="section-title">
+                  <strong>Qual tipo de solução você procura?</strong>
+                </h1>
+
+                <div class="box-dimensione n1">
+
+
+                  <a class="dimensione--item" href="javascript:void(0)" onclick="TipoPiscina('AQUECIMENTO_SOLAR')">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 14 14">
+                      <path fill="none" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"
+                        d="M13.5 13.5H13a2 2 0 0 1-2-2a2 2 0 0 1-4 0a2 2 0 0 1-4 0a2 2 0 0 1-2 2H.5m2-11a2 2 0 0 1 4 0v7m3-9a2 2 0 0 1 2 2v7m-5-5h5m-5 3h5" />
+                    </svg>
+
+                    Aquecedor Solar para Piscina
+                  </a>
+
+
+                  <a class="dimensione--item" href="javascript:void(0)" onclick="TipoPiscina('BOMBA_DE_CALOR')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32">
+                      <path fill="#888888"
+                        d="m26.338 31l-1.736-1l2.288-4H23l3.993-7l1.737 1l-2.284 4h3.89zM8 14h4v2H8zm12 0h4v2h-4zM8 18h4v2H8zm6 0h4v2h-4zm0 4h4v2h-4z" />
+                      <path fill="#888888"
+                        d="M5 11h22v5h2V5c0-1.102-.897-2-2-2H5c-1.103 0-2 .898-2 2v22c0 1.103.897 2 2 2h15v-2H5zm22-6v4H5V5z" />
+                    </svg>
+                    Bomba Calor para Piscina
+                  </a>
+
+                  <a class="dimensione--item" href="javascript:void(0)"
+                    onclick="TipoPiscina('AQUECIMENTO_SOLAR,BOMBA_DE_CALOR')">
+
+                    <span class="icon icon-pool-bomba">
+
+                    </span>
+                    Quero orçar os dois
+                  </a>
+
+                </div>
+
+                <div class="form-group">
+                  <a id="btnpiscina" class="btn btn-back" href="javascript:void(0)" style="bottom:50px;"
+                    onclick="btnVoltar('n1','piscina',20) ">
+                    Voltar
+                  </a>
+                </div>
+              </div>
+
+              <div id="piscinaArea" class="hide">
+
+                <h1 class="section-title">
+                  <strong>Qual&nbsp;o&nbsp;tamanho&nbsp;da</strong>&nbsp; sua&nbsp;piscina?
+                </h1>
+                <div class="box-dimensione n1">
+
+                  <div class="form-group">
+                    <label for="cidade">Tamanho</label>
+                    <input type="number" placeholder="Área" max="99999" onkeypress="mascara(this, mArea);"
+                      class="form-control area-piscina" id="areapicina" min="1">
+
+                    <div id="msgErrorPiscina" class="alert alert-danger hide">
+                      Qual a área ?
+                    </div>
+                  </div>
+                  <div class="form-group form-group--cidade">
+                    <label for="cidade">Unidade de medida</label>
+                    <select class="form-control" id="tamanhoPiscina" name="tamanhoPiscina">
+                      <option value="Metros Cúbicos">Metros Cúbicos</option>
+                      <option value="Litros">Litros</option>
                     </select>
                   </div>
                 </div>
 
-
-                <div class="mt-2 ">
-                  <h1>3- Total m³ </h1>
-                  <div class="mb-3">
-                    <label for="metroscubicos" class="form-label">Total de <b class="metros">10</b>m³</label>
-                    <input type="range" id="metroscubicos"
-                      oninput="document.querySelector('.metros').innerText = this.value" class="form-range" value="10"
-                      min="1" max="50" step="1" />
+                <div class="row">
+                  <div class="form-group col-sm-12 col-md-6">
+                    <p class="row" style="margin-right: 0px;">
+                      <button class="btn btn-back btn-back__forward"
+                        style="background:#008ECF; float:right;  bottom: 50px; right: 0; max-width: 150px;"
+                        href="javascript:void(0)" onclick="piscina()">
+                        Continuar
+                      </button>
+                    </p>
+                  </div>
+                  <div class="form-group col-sm-12 col-md-6">
+                    <a class="btn btn-back" href="javascript:void(0)" style="bottom:50px;"
+                      onclick="btnVoltar('n7', 'piscinaArea', 50);">
+                      Voltar
+                    </a>
                   </div>
                 </div>
+              </div>
 
-                <div>
-                  <h1>4- TEMPERATURA </h1>
-                  <div class="mb-3">
-                    <label for="temppiscina" class="form-label">temperatura média: <b
-                        class="temppiscina">20</b>º</label>
-                    <input type="range" oninput="document.querySelector('.temppiscina').innerText = this.value"
-                      id="temppiscina" class="form-range" value="20" min="10" max="50" step="1" />
+
+
+              <div id="Comercial" class="hide">
+                <h1 class="section-title">
+                  <strong>Qual o tipo de Projeto?</strong>
+                </h1>
+
+                <div class="box-dimensione n1">
+                  <a class="dimensione--item" href="javascript:void(0)" onclick="comercial('HOTEL')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                      <g fill="none" fill-rule="evenodd">
+                        <path
+                          d="M24 0v24H0V0zM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z" />
+                        <path fill="#888888"
+                          d="M17 3a2 2 0 0 1 2 2v1h1a1 1 0 1 1 0 2v11a1 1 0 1 1 0 2h-6.5v-4.5a1.5 1.5 0 0 0-3 0V21H4a1 1 0 1 1 0-2V8a1 1 0 0 1 0-2h1V5a2 2 0 0 1 2-2zM8 13a1 1 0 0 0-1 1v1a1 1 0 1 0 2 0v-1a1 1 0 0 0-1-1m8 0a1 1 0 0 0-.993.883L15 14v1a1 1 0 0 0 1.993.117L17 15v-1a1 1 0 0 0-1-1M8 9a1 1 0 0 0-.993.883L7 10v1a1 1 0 0 0 1.993.117L9 11v-1a1 1 0 0 0-1-1m4 0a1 1 0 0 0-.993.883L11 10v1a1 1 0 0 0 1.993.117L13 11v-1a1 1 0 0 0-1-1m4 0a1 1 0 0 0-1 1v1a1 1 0 1 0 2 0v-1a1 1 0 0 0-1-1m1-4H7v1h10z" />
+                      </g>
+                    </svg>
+                    Hotel/Ed. Residencial
+                  </a>
+
+                  <a class="dimensione--item" href="javascript:void(0)" onclick="comercial('VESTIARIO')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                      <path fill="#888888"
+                        d="M6.5 6.08c-.78.04-1.5.54-1.78 1.32L3 12.13V22h4v-9.16l1.42-3.9L10.7 10H14V8h-2.85L7.29 6.2a2.2 2.2 0 0 0-.79-.12M9 17h12v2H9m1-15.5a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2a2 2 0 0 1 2 2m11 11a1.5 1.5 0 0 1-1.5 1.5a1.5 1.5 0 0 1-1.5-1.5a1.5 1.5 0 0 1 1.5-1.5a1.5 1.5 0 0 1 1.5 1.5M9 11v2h2v1c0 1.11.89 2 2 2h2c1.11 0 2-.89 2-2v-3h-2v2h-2v-1a1 1 0 0 0-1-1Z" />
+                    </svg>
+                    Vestiário
+                  </a>
+                  <a class="dimensione--item" href="javascript:void(0)" onclick="comercial('CLUBE')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 50 50">
+                      <path fill="#888888"
+                        d="M47 9H32s-1 8 1 16c.804 1.34 2.79 2.062 5 2.245V37h-.333L34 40h11l-3.584-3H41v-9.828c2.12-.275 4.063-1.014 5-2.172c2-7 1-16 1-16m-1 6H33v-5h13zM21.5 37H16v-8.5L27 12H1l11 16.5V37H6.5a1.5 1.5 0 1 0 0 3h15a1.5 1.5 0 1 0 0-3" />
+                    </svg>
+                    Clube/Academia
+                  </a>
+
+                  <a class="dimensione--item" href="javascript:void(0)" onclick="comercial('INDUSTRIA')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 512 512">
+                      <path fill="#888888"
+                        d="M459.26 96L328 225.7V96h-34.525L168 223.267V16H16v480h480V96ZM464 464H48V48h88v216h36.778L296 139.018V264h38.764L464 136.3Z" />
+                      <path fill="#888888"
+                        d="M136 328v8h32v-32h-32zm0 48h32v32h-32zm80-48v8h32v-32h-32zm0 48h32v32h-32zm80-48v8h32v-32h-32zm0 48h32v32h-32zm80-72h32v32h-32zm0 72h32v32h-32z" />
+                    </svg>
+                    Industria
+                  </a>
+                  <a class="dimensione--item" href="javascript:void(0)" onclick="comercial('HOSPITAL')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                      <path fill="#888888"
+                        d="M2 22V7a1 1 0 0 1 1-1h4V2h10v4h4a1 1 0 0 1 1 1v15h-8v-5h-4v5zM9 4v6h2V8h2v2h2V4h-2v2h-2V4zM4 20h4v-3H4zm0-5h4v-3H4zm12 5h4v-3h-4zm0-5h4v-3h-4zm-6 0h4v-3h-4z" />
+                    </svg>
+                    Hospital
+                  </a>
+
+                  <a class="dimensione--item" href="javascript:void(0)" onclick="comercial('HABITACAO')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                      <path fill="none" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 5a2 2 0 1 0 4 0a2 2 0 1 0-4 0M3 19a2 2 0 1 0 4 0a2 2 0 1 0-4 0m14 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0m-8-5a3 3 0 1 0 6 0a3 3 0 1 0-6 0m3-7v4m-5.3 6.8l2.8-2m7.8 2l-2.8-2" />
+                    </svg>
+                    HIS
+                  </a>
+                  <a class="dimensione--item" href="javascript:void(0)" onclick="comercial('OUTROS')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                      <path fill="#888888"
+                        d="M12 6q-.825 0-1.412-.587T10 4t.588-1.412T12 2t1.413.588T14 4t-.587 1.413T12 6M9 21V9q-1.225-.1-2.475-.275t-2.45-.45q-.425-.1-.687-.475T3.25 7t.525-.625t.85-.1q1.75.375 3.638.55T12 7t3.738-.175t3.637-.55q.45-.1.85.1T20.75 7t-.137.8t-.688.475q-1.2.275-2.45.45T15 9v12q0 .425-.287.713T14 22t-.712-.288T13 21v-5h-2v5q0 .425-.288.713T10 22t-.712-.288T9 21" />
+                    </svg>
+                    Outro
+                  </a>
+                </div>
+                <div class="form-group">
+                  <a class="btn btn-back" href="javascript:void(0)" style="bottom:50px;"
+                    onclick="btnVoltar('n1','Comercial',20) ">
+                    Voltar
+                  </a>
+                </div>
+              </div>
+
+
+
+              <div id="ComercialResidencia" class="hide">
+
+
+                <h1 class="section-title">
+                  <strong>Quantas residencias serão atendidas?</strong>
+                </h1>
+
+                <div class="box-dimensione n1">
+
+                  <div class="form-group">
+                    <input type="number" class="form-control" style="width: 210px;" placeholder="Residências"
+                      id="ComercialResidenciaNumeroCasa" min="1" max="99999" onkeypress="mascara(this, mArea);">
+
+                    <div id="msgErrorNumeroResidencias" class="alert alert-danger hide">
+                      Qual o número de residências ?
+                    </div>
                   </div>
+                  <div class="form-group">
+                    <a class="btn btn-default" href="javascript:void(0)" onclick="ComercialResidencia()">
+                      Continuar
+                    </a>
+                  </div>
+
                 </div>
 
-
-
+                <div class="form-group">
+                  <a class="btn btn-back" href="javascript:void(0)" style="bottom:50px;"
+                    onclick="btnVoltar('Comercial', 'ComercialResidencia', 50);">
+                    Voltar
+                  </a>
+                </div>
               </div>
-              <div class=" ongred mt-2 d-flex justify-content-center align-items-center">
-                <button class="ongred btn btn-warning" data-bs-toggle="collapse" href="#collapseExamplePiscinas"
-                  role="button" aria-expanded="false" aria-controls="collapseExamplePiscinas">RESULTADO</button>
-              </div>
 
-              <div class="container mt-4">
 
-                <div class="collapse ongred" id="collapseExamplePiscinas">
-                  <div class=" card-body">
-                    <div class="row">
-                      <div class="col-sm-12  p-2">
-                        <div class="card" style="width: 100%; height: 350px;">
-                          <div class="card-body d-flex flex-column justify-content-between">
-                            <h1 class="card-title">RETORNO ESTIMADO</h1>
-                            <p class="card-text">
-                            <div class="mt-3">
-                              Economia mensal
-                              R$ <b class="economiaMensal"> 152,00</b> <br>
-                            </div>
-                            <div class="mt-3">
-                              Economia total acumulada em 30 anos
-                              R$ <b class="trintaanos"> 54.720,00 </b>
-                            </div>
-                            </p>
-                            <a href="../#solicitarCotacao" class="btn btn-secondary col-12">Quero contratar</a>
-                          </div>
-                        </div>
-                      </div>
 
+              <div id="ComercialObservacoes" class="hide">
+
+
+                <h1 class="section-title">
+                  <strong>Insira mais informações sobre seu Projeto?</strong>
+                </h1>
+
+                <div class="box-dimensione n1">
+                  <div class="form-group">
+                    <textarea cols="20" placeholder="+ Informações" class="form-control txa-informacoes"
+                      id="comercialObs"></textarea>
+
+                    <div id="msgErrorComercialObs" class="alert alert-danger hide">
+                      Insira mais informaçoes!
                     </div>
                   </div>
                 </div>
+
+                <div class="form-group">
+                  <p class="row" style="margin-right: 0px;">
+                    <a class="btn btn-back btn-back__forward"
+                      style="background:#008ECF; float:right;  bottom: 50px; right: 0;" href="javascript:void(0)"
+                      onclick="ComercialObservacoes()">
+                      Finalizar
+                    </a>
+                  </p>
+                </div>
+                <div class="form-group">
+                  <a id="btnVoltarComercialObs" class="btn btn-back" style="bottom:50px;" href="javascript:void(0)">
+                    Voltar
+                  </a>
+                </div>
+
+
+              </div>
+
+
+              <div id="resultado" class="hide">
+                <a class="btn btn-back" href="../projetos">
+                  Voltar
+                </a>
+              </div>
+
+              <div class="status">
+                <div class="barra-status">
+                  <span id="barrastatus" class="barra-status--progress" data-index="1" style="width: 10%;">
+
+                  </span>
+                </div>
               </div>
             </div>
           </div>
 
 
 
+          <div id="modalLoading" class="modal " tabindex="-1" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div id="" class="modal-body">
+                  <div id="boxLoading" class="overlay dNone">
+                    Enviando o pedido
 
-
-
-
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="container">
-      <div class="row mt-5">
-
-        <div class="col-sm-12 col-md-8">
-
-          <div>
-            <h1 style="color:#025c97">Sobre</h1>
-            <p class="mt-2">Quem não sonha em ter sua piscina quentinha o ano todo? Trabalhamos com dois modelos em
-              condições super acessíveis para que este sonho possa se tornar realidade!</p>
-            <div>
-              <p>
-                <b>Aquecimento solar de piscina:</b> Com placas diferenciadas e super resistentes para a água com cloro
-                instalados no telhado, é feita uma tubulação para ligá-los até piscina e a casa de máquinas, onde fica
-                uma bomba dedicada ao sistema. A água é bombeada para os coletores, onde ela é aquecida pela radiação
-                solar e então devolvida já quente para a piscina.
-              </p>
+                  </div>
+                </div>
+              </div>
+              <!-- /.modal-content -->
             </div>
-            <div>
-              <p>
-                <b>Aquecimento por bomba de calor:</b> com instalação rápida e prática, fornece aquecimento de precisão
-                em ambientes controlados, com muita economia. Apesar de ser um sistema elétrico, o aquecimento de
-                piscina por bomba de calor apresenta uma forma economicamente eficiente de confortar seu banho de
-                piscina.
-              </p>
-            </div>
-          </div>
-          <div>
-            <h1 style="color:#025c97">Vantagens e economia</h1>
-            <p class="mt-2">
-              Com suas placas especiais para captação da água, ou coletores, é feito um caminho da tubulação que liga
-              caixa d’água, reservatório e seus componentes para a passagem constante da água nas horas de maior
-              incidência dos raios solares.
-            </p>
-          </div>
-          <div>
-
+            <!-- /.modal-dialog -->
           </div>
 
+          <style>
+            @media(max-width:480px) {
+              .btn.btn-back {
+                min-width: 210px;
+                transform: translate(-50%, -50%);
+                left: 50% !important;
+                right: unset;
+              }
+
+              .btn.btn-back__back {
+                bottom: 60px !important;
+              }
+
+              .btn.btn-back__forward {
+                bottom: 0 !important;
+              }
+            }
+
+            .dimensione .barra-status {
+              width: 100%;
+            }
+
+            .box-dimensione-xs {
+              margin-bottom: 10px;
+            }
+
+            .box-dimensione-xs,
+            .box-dimensione {
+              display: flex !important;
+              flex-wrap: wrap !important;
+              justify-content: center !important;
+            }
+
+            .dimensione--item-ducha {
+              flex-basis: 15% !important;
+            }
+
+            .dimensione--item {
+              flex-basis: 30%;
+            }
+
+            .dimensione--item:last-child {
+              margin-right: 30px;
+            }
+
+            .alert-danger {
+              color: #a94442;
+              background-color: #f2dede;
+              border-color: #ebccd1;
+            }
+
+            .error {
+              border-color: red !important;
+              color: red !important;
+            }
+
+            .checked-tipo-aquecimento {
+              text-decoration: none;
+              background: #008ECF;
+              color: #fff;
+              border-color: #008ECF;
+            }
+
+            .nochecked-tipo-aquecimento {
+              text-decoration: none !important;
+              background: #fff !important;
+              color: #575757 !important;
+              border-color: #575757 !important;
+            }
+          </style>
+
+
+
+
         </div>
-        <div class="col-sm-12 col-md-4">
-          <div style="background-image: url('../img/piscinaaquecida.jpeg');
-          background-position: center;
-          background-size: cover;
-          width: 400px;
-          height: 400px;
-          border-radius: 20px;
-          "></div>
+
+
+
+        <div class="container">
+
+
         </div>
+
+
       </div>
-    </div>
 
 
+    </main>
 
 
   </div>
 
+  <div class="p-5">
+    <hr>
+  </div>
   <!-- FIM Bloco -->
 
 
@@ -392,16 +1334,16 @@
       text-align:center;
       justify-content: center;
       align-items: center;
-      font-size: 1.5rem;
+      
       font-weight: 700;
       ">
-    <h1>Sistema de energia fotovoltaico</h1>
+    <h1>Calculadora de energia fotovoltaico</h1>
   </div>
 
 
 
   <!-- Bloco -->
-  <div class=" mt-5 mb-5 p-5" style="background-color: transparent;">
+  <div class=" mt-5 mb-5 " style="background-color: transparent;">
 
 
 
@@ -590,18 +1532,19 @@
       <div class="row mt-5">
 
 
-        <div class="col-sm-12 col-md-4 p-2">
+        <div class="col-sm-12 col-md-6 col-lg-4">
           <div style="background-image: url('../img/image.png');
                         background-position: center;
                         background-size: cover;
-                        width: 400px;
+                        width: 100%;
+                        min-width: 300px;
                         height: 400px;
                         border-radius: 20px;
                         "></div>
         </div>
 
 
-        <div class="col-sm-12 col-md-8 ">
+        <div class="col-sm-12 col-md-6 col-lg-8 ">
 
           <div>
             <h1 style="color: #025c97;">Sobre</h1>
@@ -648,9 +1591,9 @@
   <div style="
         background-color: #347392;
         width: 100%;
-        padding: 50px;
+        padding: 10px;
       ">
-    <div class="row">
+    <div class="row mt-3">
       <div class="col-md-6 col-sm-12 col-lg-6">
         <div style="
               display: flex;
@@ -658,7 +1601,8 @@
               justify-content: center;
               margin-bottom: 20px;
             ">
-          <img loading="lazy" src="../img/logocolorida.png" width="30%" height="30%" alt="" />
+          <img loading="lazy" src="../img/logocolorida.png" width="30%" style="min-width: 150px; " class="mt-4 mb-4"
+            height="30%" alt="" />
         </div>
       </div>
       <div class="col-md-6 col-sm-12 col-lg-6">
@@ -735,6 +1679,8 @@
       <p><a style="color: black;" href="../projetos/">Projetos</a></p>
       <p><a style="color: black;" href="../beneficios/">Benefícios</a></p>
       <p><a style="color: black;" href="../contato/">Contato</a></p>
+
+      <p><a style="color: black;" href="https://sunrioenergiasolar.blogspot.com" target="_blank">Blog</a></p>
       <span> <a href="https://api.whatsapp.com/send/?phone=5521997861897&text=Ol%C3%A1"
           style="text-decoration: underline;font-size: 0.8rem; color: black;">(21)
           3936-0411</a>
@@ -764,18 +1710,607 @@
 
 <script src="../popper.min.js"></script>
 <script src="../bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+
+  let enviar = false
+  let valorBar = 0
+
+  //--------------btn voltar--------------
+  function btnVoltar(alvo, atual, barrastatus) {
+    /*$('#modalLoading').modal('show');
+    setTimeout(function () {
+        $('#modalLoading').modal('hide');
+    }, 1000);*/
+    $('#' + atual).addClass("hide");
+    $('#' + alvo).removeClass("hide");
+    setarBarraStatus(barrastatus);
+
+  }
+
+
+
+  //----------barrastatus----------
+  function setarBarraStatus(valor) {
+    valorBar = valor
+    if (parseInt(valor) >= 20) {
+      if (!$('#form').hasClass("hide")) {
+        $('#form').addClass("hide");
+      }
+    }
+    if (parseInt(valorBar) == 30) {
+      document.querySelector('#n1').style.display = 'none'
+    }
+
+    preencherForm()
+    if (valor > -1) {
+      $('.dimensione .barra-status--progress').width(valor + "%");
+    } else {
+      $('.dimensione .barra-status').hide();
+    }
+  }
+
+  $('.cliqueorcamentopasso1').on("click", function () {
+    setTimeout(
+      function () {
+        var name = $("#Name");
+        var arrayName = name.val().split(" ");
+
+        if (arrayName.length < 2 || arrayName[1] == "") {
+          name.removeClass("valid");
+          name.addClass("error");
+          return;
+        }
+        else {
+          $("#Name").removeClass("error");
+          $("#Name").addClass("valid");
+        }
+      }, 100);
+  });
+
+  $("#Name").blur(function () {
+    var name = $("#Name");
+    var arrayName = name.val().split(" ");
+
+    if (arrayName.length < 2 || arrayName[1] == "") {
+      name.removeClass("valid");
+      name.addClass("error");
+    }
+    else {
+      $("#Name").removeClass("error");
+      $("#Name").addClass("valid");
+    }
+  });
+
+
+
+  //--------dados Inicio------------
+
+
+  function preencherForm() {
+    if (valorBar == 0) {
+      setarBarraStatus(20);
+    }
+    var name = $("#Name").val();
+    var email = $("#Email_c").val();
+    var telefone = $("#TelefoneResidencial_c").val();
+    var newsletter = $("#IsNewsLetter").prop("checked") ? 'Sim' : 'Não';
+    var privacidade = $("#privacidade").prop("checked") ? 'Sim' : 'Não';
+
+    // Capturando outros campos relevantes
+    //var torneiras = $("#Torneiras").val();
+    //var piscinaComercial = $("#PiscinaComercial").val();
+
+    // Capturando todos os inputs adicionais
+    var leadId = $("#LeadId").val();
+    var isDimensione = $("#IsDimensione").val();
+    var paraOndAquecimento = $("#ParaOndAquecimento_c").val();
+    var quantPessoaCasa = $("#QuantPessoaCasa_c").val();
+    var quantidade = $("#Quantidade_c").val();
+    var quantidadeTorneiras = $("#QuantidadeTorneiras_c").val();
+    var comercialTipo = $("#ComercialTipo").val();
+    var numeroCasaComercial = $("#NumeroCasaComercial").val();
+    var areaPiscina = $("#AreaPiscina_c").val();
+    var tipoSolucaoCasa = $("#TipoSolucaoCasa_c").val();
+    var codigoModel = $("#CodigoModel").val();
+    var isCompleto = $("#IsCompleto").val();
+    var tipoSolucaoPiscina = $("#TipoSolucaoPiscina_c").val();
+    var comercialObservacoes = $("#ComercialObservacoes_c").val();
+
+    // Salvar os dados no localStorage
+    var formData = {
+      'Name': name,
+      'Email_c': email,
+      'TelefoneResidencial_c': telefone,
+      'IsNewsLetter': newsletter,
+      'privacidade': privacidade,
+      'LeadId': leadId,
+      'IsDimensione': isDimensione,
+      'ParaOndAquecimento_c': paraOndAquecimento,
+      'QuantPessoaCasa_c': quantPessoaCasa,
+      'Quantidade_c': quantidade,
+      'QuantidadeTorneiras_c': quantidadeTorneiras,
+      'ComercialTipo': comercialTipo,
+      'NumeroCasaComercial': numeroCasaComercial,
+      'AreaPiscina_c': areaPiscina,
+      'TipoSolucaoCasa_c': tipoSolucaoCasa,
+      'CodigoModel': codigoModel,
+      'IsCompleto': isCompleto,
+      'TipoSolucaoPiscina_c': tipoSolucaoPiscina,
+      'ComercialObservacoes_c': comercialObservacoes
+    };
+
+    // Convertendo para JSON e salvando no localStorage
+    localStorage.setItem('formData', JSON.stringify(formData));
+
+
+
+    if (enviar == true) {
+      enviarForm();
+      return true; // Evitar o comportamento padrão do formulário
+    } else {
+      // Continuar com o restante do código
+
+      $('#modalLoading').modal('show');
+      setTimeout(() => {
+        $('#modalLoading').modal('hide');
+      }, 5000);
+
+
+
+
+      $('#ParaOndAquecimento_c').val('');
+
+      $('#localizacao').addClass("hide");
+
+      $('#n1').removeClass("hide");
+      $('#modalLoading').modal('hide');
+      return false; // Evitar o comportamento padrão do formulário
+    }
+    return false
+
+
+  }
+
+
+
+  //-----------tipo
+  function nivel1(valor) {
+    setarBarraStatus(40);
+
+    if (valor == 'CASA') {
+      // adicionar no form
+      $('#n1').addClass("hide");
+      $('#n6').removeClass("hide");
+    }
+    else if (valor == 'APARTAMENTO') {
+      // adicionar no form
+      $('#n1').addClass("hide");
+      $('#n6').removeClass("hide");
+      $('#btnVoltarDuchas').attr('onclick', 'btnVoltar("n1","n6",10)')
+    }
+    else if (valor == 'A_COMERCIAL') {
+      // adicionar no form
+      $('#n1').addClass("hide");
+      $('#Comercial').removeClass("hide");
+    } else if (valor == 'PISCINA') {
+      // adicionar no form
+      $('#n1').addClass("hide");
+      $('#piscina').removeClass("hide");
+    }
+
+    $('#ParaOndAquecimento_c').val(valor);
+  }
+
+  //-----------Pessoas
+  function nivel2(valor) {
+    setarBarraStatus(50);
+
+    //setar valor no form
+    $('#n6').addClass("hide");
+    $('#n5').removeClass("hide");
+
+    $('#TipoSolucaoCasa_c').val(valor);
+  }
+  //-----------Duchas
+  function nivel3(valor) {
+    setarBarraStatus(65);
+
+    //setar valor no form
+    $('#n3').addClass("hide");
+    $('#n4').removeClass("hide");
+    $('#Quantidade_c').val(valor);
+  }
+
+  //-----------Torneiras
+  function nivel4(valor) {
+    setarBarraStatus(80);
+
+    //setar valor no form
+    $('#n3').addClass("hide");
+    $('#n4').removeClass("hide");
+
+    $('#Quantidade_c').val(valor);
+  }
+
+  //-----------nivel 5 Pessoas
+  function nivel5(valor) {
+    setarBarraStatus(70);
+
+    //setar valor no form
+    $('#n5').addClass("hide");
+    $('#n3').removeClass("hide");
+    $('#QuantPessoaCasa_c').val(valor);
+  }
+
+  function nivel6(valor) {
+    setarBarraStatus(35);
+
+    //setar valor no form
+    $('#n1').addClass("hide");
+    $('#n6').removeClass("hide");
+    $('#ParaOndAquecimento_c').val(valor);
+  }
+
+  // torneiras
+  function nivel7(valor) {
+    setarBarraStatus(80);
+
+    if ($('input[name="AquecimentoPiscina"]').val() == '') {
+      //setar valor no form
+      $('#n4').addClass("hide");
+
+      $('#btnVoltarLocalizacao').attr('onclick', 'btnVoltar("n4","localizacao",80)')
+      $('#QuantidadeTorneiras_c').val(valor);
+
+      $('#resultado').removeClass("hide");
+
+      enviarForm();
+    }
+    else {
+      //setar valor no form
+      $('#n4').addClass("hide");
+      $('#n7').removeClass("hide");
+
+      $('#btnVoltarLocalizacao').attr('onclick', 'btnVoltar("n4","localizacao",80)')
+      $('#QuantidadeTorneiras_c').val(valor);
+    }
+  }
+
+  function nivel10(valor) {
+    setarBarraStatus(30);
+
+    $(".mensagemTipoAqueJQ").hide();
+    if ($(".aquecimentoPiscinaJQ").hasClass("checked") == false && $(".aquecimentoSolarJQ").hasClass("checked") == false && $(".aquecimentoGasJQ").hasClass("checked") == false) {
+      $(".mensagemTipoAqueJQ").show();
+      return;
+    }
+
+    if ($(".aquecimentoPiscinaJQ").hasClass("checked") == true && $(".aquecimentoSolarJQ").hasClass("checked") == false && $(".aquecimentoGasJQ").hasClass("checked") == false) {
+
+      $('#n6').addClass("hide");
+
+      $('#n7').removeClass("hide");
+      $('#btnVoltarAquecimento').attr("onclick", "btnVoltar('n6','n7',20)");
+    }
+    else {
+
+      $('#n6').addClass("hide");
+
+      $('#n5').removeClass("hide");
+      $('#btnVoltarAquecimento').attr("onclick", "btnVoltar('n4','n7',20)");
+    }
+
+    valor = $('input[name="AquecimentoSolar"]').val() + ',' + $('input[name="AquecimentoGas"]').val() + ',' + $('input[name="AquecimentoPiscina"]').val();
+
+
+    $('#TipoSolucaoCasa_c').val(valor);
+  }
+
+  //-----------tipo de aquecimento Solar
+  function setarAquecimentoSolar(valor) {
+
+    if ($(".aquecimentoSolarJQ").hasClass("checked") == false) {
+      $('input[name="AquecimentoSolar"]').val(valor);
+      $('.aquecimentoSolarJQ').addClass("checked checked-tipo-aquecimento");
+      $('.aquecimentoSolarJQ').removeClass("nochecked-tipo-aquecimento");
+    }
+    else {
+      $('input[name="AquecimentoSolar"]').val('');
+      $('.aquecimentoSolarJQ').removeClass('checked checked-tipo-aquecimento');
+      $('.aquecimentoSolarJQ').addClass("nochecked-tipo-aquecimento");
+    }
+  }
+
+  function setarAquecimentoGas(valor) {
+
+    if ($(".aquecimentoGasJQ").hasClass("checked") == false) {
+      $('input[name="AquecimentoGas"]').val(valor);
+      $('.aquecimentoGasJQ').addClass("checked checked-tipo-aquecimento");
+      $('.aquecimentoGasJQ').removeClass("nochecked-tipo-aquecimento");
+    }
+    else {
+      $('input[name="AquecimentoGas"]').val('');
+      $('.aquecimentoGasJQ').removeClass('checked checked-tipo-aquecimento');
+      $('.aquecimentoGasJQ').addClass("nochecked-tipo-aquecimento");
+    }
+  }
+
+  function setarAquecimentoPiscina(valor) {
+
+    if ($(".aquecimentoPiscinaJQ").hasClass("checked") == false) {
+      $('input[name="AquecimentoPiscina"]').val(valor);
+      $('.aquecimentoPiscinaJQ').addClass("checked checked-tipo-aquecimento");
+      $('.aquecimentoPiscinaJQ').removeClass("nochecked-tipo-aquecimento");
+    }
+    else {
+      $('input[name="AquecimentoPiscina"]').val('');
+      $('.aquecimentoPiscinaJQ').removeClass('checked checked-tipo-aquecimento');
+      $('.aquecimentoPiscinaJQ').addClass("nochecked-tipo-aquecimento");
+    }
+  }
+
+  //-----------  solucao
+  function nivel8(valor) {
+    setarBarraStatus(50);
+
+    $('#n6').addClass("hide");
+    $('#n5').removeClass("hide");
+
+    $('#TipoSolucaoCasa_c').val(valor);
+  }
+
+  //-----------Cidade
+  function ComboCidade(value) {
+
+    var stringUrl = 'https://www.heliotek.com.br/modulo/dimensione/_Cidade';
+    var stringParametros = 'estado=' + value,
+      stringUrl = stringUrl + '?' + stringParametros;
+
+    $('#modalLoading').modal('show');;
+    $.getJSON(stringUrl, function (data) {
+      var items = '<option>Selecione</option>';
+      $.each(data.listaCidade, function (i, objetivo) {
+        items += "<option value='" + objetivo.Cidade + "'>" + objetivo.Cidade + "</option>";
+      });
+      $('#Cidade_c').html(items);
+      $('#modalLoading').modal('hide');
+    });
+    //} else {
+    //    var items = '<option>Selecione Perspectiva </option>';
+    //    $('#filtroObjetivos').html(items);
+    //}
+
+
+  }
+
+  //---------comercial---------------
+  function comercial(valor) {
+    setarBarraStatus(50);
+    /* $('#modalLoading').modal('show');;
+      setTimeout(function () {
+         $('#modalLoading').modal('hide');
+      }, 1000);*/
+    //setar valor no form
+    $('#ComercialTipo').val(valor);
+    $('#Comercial').addClass("hide");
+
+    if (valor != 'HABITACAO') {
+      $('#btnVoltarComercialObs').attr('onclick', 'btnVoltar("Comercial","ComercialObservacoes",40)')
+      $('#ComercialObservacoes').removeClass("hide");
+
+    } else {
+
+      $('#ComercialResidencia').removeClass("hide");
+    }
+  }
+
+  function ComercialResidencia() {
+    setarBarraStatus(60);
+    var valor = $('#ComercialResidenciaNumeroCasa').val();
+    if (valor != 'null' && valor != 'undefined' && valor.length > 0) {
+
+      $('#NumeroCasaComercial').val(valor)
+      $('#msgErrorNumeroResidencias').addClass("hide");
+      $('#ComercialResidencia').addClass("hide");
+      $('#ComercialObservacoes').removeClass("hide");
+      $('#btnVoltarComercialObs').attr('onclick', 'btnVoltar("ComercialResidencia","ComercialObservacoes",40)')
+    } else {
+      $('#msgErrorNumeroResidencias').removeClass("hide");
+    }
+
+
+  }
+
+  function ComercialObservacoes() {
+    setarBarraStatus(60);
+    var valor = $('#comercialObs').val();
+    if (valor != 'null' && valor != 'undefined' && valor.length > 0) {
+
+      //setar no form
+      $('#ComercialObservacoes_c').val(valor)
+
+      $('#msgErrorComercialObs').addClass("hide");
+      $('#ComercialObservacoes').addClass("hide");
+
+      $('#resultado').removeClass("hide");
+
+      enviarForm();
+
+    } else {
+      $('#msgErrorComercialObs').removeClass("hide");
+    }
+
+
+  }
+
+  //--------------PISCINA----------
+  function TipoPiscina(valor) {
+    setarBarraStatus(70);
+
+    $('#n7').addClass("hide");
+    $('#piscinaArea').removeClass("hide");
+
+    $('#TipoSolucaoPiscina_c').val(valor);
+  }
+
+  function piscina(valor) {
+
+    setarBarraStatus(80);
+    var valor = $('#areapicina').val();
+
+    if (valor != 'null' && valor != 'undefined' && valor.length > 0) {
+      valor = valor + " " + $("#tamanhoPiscina").val();
+      $('#AreaPiscina_c').val(valor)
+
+      $('#msgErrorPiscina').addClass("hide");
+      $('#piscinaArea').addClass("hide");
+
+      $('#resultado').removeClass("hide");
+      enviar = true
+      enviarForm();
+    }
+    else {
+      $('#msgErrorPiscina').removeClass("hide");
+    }
+  }
+
+  //------------------Enviar Formulario
+  //------------------Enviar Formulario
+  function enviarForm() {
+    // Recuperar os dados do localStorage
+    var formData = JSON.parse(localStorage.getItem('formData'));
+
+    if (formData) {
+      var nome = document.getElementById('Name').value
+      var email = document.getElementById('Email_c').value
+      var telefone = document.getElementById('TelefoneResidencial_c').value
+      var newsletter = document.getElementById('IsNewsLetter').checked ? 'Sim' : 'Não';
+      var privacidade = document.getElementById('privacidade').checked ? 'Sim' : 'Não';
+
+      // Capturando outros campos relevantes
+      // var torneiras = document.getElementById('Torneiras').value
+      //var piscinaComercial = document.getElementById('PiscinaComercial').value
+
+      // Capturando todos os inputs adicionais
+      var leadId = document.getElementById('LeadId').value
+      var isDimensione = document.getElementById('IsDimensione').value
+      var paraOndAquecimento = document.getElementById('ParaOndAquecimento_c').value
+      var quantPessoaCasa = document.getElementById('QuantPessoaCasa_c').value
+      var quantidade = document.getElementById('Quantidade_c').value
+      var quantidadeTorneiras = document.getElementById('QuantidadeTorneiras_c').value
+      var comercialTipo = document.getElementById('ComercialTipo').value
+      var numeroCasaComercial = document.getElementById('NumeroCasaComercial').value
+      var areaPiscina = document.getElementById('AreaPiscina_c').value
+      var tipoSolucaoCasa = document.getElementById('TipoSolucaoCasa_c').value
+      var codigoModel = document.getElementById('CodigoModel').value
+      var isCompleto = document.getElementById('IsCompleto').value
+      var tipoSolucaoPiscina = document.getElementById('TipoSolucaoPiscina_c').value
+      var comercialObservacoes = document.getElementById('ComercialObservacoes_c').value
+
+      // Capturando todos os inputs adicionais (caso necessário)
+
+      // Validando se todos os campos obrigatórios estão preenchidos
+      if (nome && email && telefone) {
+        $('#modalLoading').modal('show');
+
+
+
+        var mensagem = 'Olá, gostaria de mais informações.\n\n' +
+          'Nome: ' + nome + '\n' +
+          'E-mail: ' + email + '\n' +
+          'Telefone: ' + telefone + '\n' +
+          'Aceita receber newsletter: ' + newsletter + '\n' +
+          'Concorda com a política de privacidade: ' + privacidade + '\n' +
+          'Lead ID: ' + leadId + '\n' +
+          'É para aquecimento: ' + paraOndAquecimento + '\n' +
+          'Quantidade de pessoas na casa: ' + quantPessoaCasa + '\n' +
+          'Quantidade: ' + quantidade + '\n' +
+          'Quantidade de torneiras: ' + quantidadeTorneiras + '\n' +
+          'Tipo comercial: ' + comercialTipo + '\n' +
+          'Número da casa comercial: ' + numeroCasaComercial + '\n' +
+          'Área da piscina: ' + areaPiscina + '\n' +
+          'Tipo de solução para casa: ' + tipoSolucaoCasa + '\n' +
+          'Código do modelo: ' + codigoModel + '\n' +
+          'Tipo de solução para piscina: ' + tipoSolucaoPiscina + '\n' +
+          'Observações comerciais: ' + comercialObservacoes + '\n';
+
+
+        var link = 'https://api.whatsapp.com/send?phone=5521997861897&text=' + mensagem;
+        window.open(link, '_blank');
+
+        return true; // Permitir o envio do formulário
+      } else {
+        // Caso algum campo obrigatório não esteja preenchido
+        alert('Por favor, preencha todos os campos obrigatórios.');
+        return false; // Impedir o envio do formulário
+      }
+    } else {
+      // Caso não haja dados salvos no localStorage
+      alert('Nenhum dado do formulário encontrado.');
+      return false; // Impedir o envio do formulário
+    }
+  }
+
+  //------------------mascaras
+
+  function mascara(o, f) {
+    v_obj = o
+    v_fun = f
+    setTimeout("execmascara()", 1)
+  }
+
+  function execmascara() {
+    v_obj.value = v_fun(v_obj.value)
+  }
+
+  function mtel(v) {
+    v = v.replace(/\D/g, "");                  //Remove tudo o que não é dígito
+    v = v.replace(/^(\d{2})(\d)/g, "($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+    v = v.replace(/(\d)(\d{4})$/, "$1-$2");    //Coloca hífen entre o quarto e o quinto dígitos
+    return v;
+  }
+
+  function mArea(v) {
+    v = v.replace(/\D/g, "");                  //Remove tudo o que não é dígito
+    if (v < 1 || v > 99999) {
+      v = "";
+    }
+    return v;
+  }
+
+  //$('#FomularioDimensione').validate({
+
+  //   highlight: function (element) {
+  //       $(element).parent(".input-group").addClass("error");
+  //   },
+  //   unhighlight: function (element) {
+  //       $(element).parent(".input-group").removeClass("error");
+  //   },
+  //   rules: {
+  //       "Name": { required: true, maxlength: 50, minlength: 6 },
+  //       "Email_c": { required: true, maxlength: 50, minlength: 6 },
+  //       "TelefoneResidencial_c": { required: true, maxlength: 16, minlength: 6 }
+  //   }
+  //});
+
+  $('#FomularioDimensione').validate({
+    rules: {
+      Name: { required: true },
+      Email_c: { required: true },
+      TelefoneResidencial_c: { required: true },
+      Cidade_c: { required: false },
+      Estado_c: { required: false },
+      privacidade: { required: true }
+    },
+    errorPlacement: function (error, element) { }
+  });
+
+</script>
+
 <script>
-  document.querySelector(
-    "#imagefundo"
-  ).style.backgroundImage = "url(../img/image.png)";
-  document.querySelector(
-    "#imagefundo2"
-  ).style.backgroundImage =
-    "url(../img/piscinaaquecida.jpeg)";
-  document.querySelector(
-    "#imagefundo3"
-  ).style.backgroundImage =
-    "url(https://heliodin.com.br/wp-content/uploads/2021/04/banner_rotativo-scaled.jpg)";
+
   function showNivel(nivel) {
     let a = document.querySelectorAll(".niveis");
     for (let N of a) {
@@ -786,5 +2321,40 @@
       .classList.add("actived");
   }
 </script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="./main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Definir isMobile -->
+<script>
+  function isMobile() {
+    // Lógica para verificar se o dispositivo é móvel
+    // Exemplo simplificado
+    return window.innerWidth < 768; // Considera como móvel se a largura da janela for menor que 768px
+  }
+</script>
+<!-- Outros scripts -->
+<script>
+  $(document).ready(function () {
+    // Exemplo de uso de isMobile
+    if (isMobile()) {
+      console.log('Dispositivo é móvel.');
+    } else {
+      console.log('Dispositivo não é móvel.');
+    }
+  });
+</script>
+
+<script src="./jquery.validate.min.js"></script>
+<script src="./scrollHeader.js"></script>
 
 </html>

@@ -1,3 +1,7 @@
-.dados a{
+.dados a {
     color: black;
+}
+
+.row {
+    width: 100%;
 }
